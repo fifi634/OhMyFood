@@ -1,3 +1,4 @@
+/* Mixin */
 /* Typography */
 body {
   font-family: Roboto, sans-serif;
@@ -18,17 +19,28 @@ strong {
   color: #000000;
 }
 
-.title-general {
+.title__general {
   font-size: 24px;
   font-weight: 600;
   color: #000000;
 }
+.title__nav {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
 
-button {
+.button {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: white;
+}
+
+.puce {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Base */
@@ -49,17 +61,20 @@ a {
   text-decoration: none;
 }
 
+.icon--active {
+  color: #9356DC;
+}
+
 /* Container */
 body {
   width: 100%;
 }
 
 /* Components */
-button {
+.button {
   padding: 15px 20px;
   border-radius: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  border: none;
 }
 
 /* Header */
@@ -68,13 +83,47 @@ button {
   text-align: center;
 }
 
+/* Nav */
+.nav--margin {
+  padding: 60px 5%;
+}
+.nav__button {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px #d1d1d1;
+}
+.nav__button--active {
+  background-color: rgba(215, 192, 242, 0.3);
+}
+.nav__icon {
+  margin: 0 7%;
+}
+
+.puce {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9356DC;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #9356DC;
+  margin-left: -30px;
+}
+
 /* Home */
 .location {
   background-color: #f7f7f7;
 }
+.location__icon {
+  color: black;
+  margin: 0 15px 0 0;
+}
 
 .position {
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   width: auto;
   padding: 15px;
   align-items: center;
@@ -82,20 +131,15 @@ button {
   box-shadow: 0px 10px 10px -10px #c4c4c4 inset;
 }
 
-.icon-location {
-  color: black;
-  margin: 0 15px 0 0;
-}
-
 .description {
-  padding: 60px 0 60px 0;
+  padding: 60px 5% 60px 5%;
   text-align: center;
 }
 .description--titleMargin {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .description--descriMargin {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

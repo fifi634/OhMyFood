@@ -1,0 +1,6 @@
+@mixin color--active($color: $color-primary)
+{
+    $color: rgba($color, 0.3);
+    $color: lighten($color, 25);
+    background-color: $color;
+}

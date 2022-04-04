@@ -1,5 +1,8 @@
 @import "./utils/variables";
 
+/* Mixin */
+@import "./utils/mixinx";
+
 /* Typography */
 @import "./base/typography";
 
@@ -14,6 +17,9 @@
 
 /* Header */
 @import "./layout/header";
+
+/* Nav */
+@import "./layout/nav";
 
 /* Home */
 @import "./pages/home.scss";

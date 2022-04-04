@@ -18,3 +18,11 @@ a
     color: inherit;
     text-decoration: none;
 }
+
+.icon
+{
+    &--active
+    {
+        color: $color-primary;
+    }
+}

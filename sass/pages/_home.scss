@@ -1,11 +1,17 @@
 .location
 {
     background-color: $color-background;
+
+    &__icon
+    {
+        color: black;
+        margin: 0 15px 0 0;
+    }
 }
 
 .position
 {
-    background-color: darken($color-background, 5);
+    background-color: darken($color-background, 2);
     width: auto;
     padding: 15px;
     align-items: center;
@@ -13,22 +19,18 @@
     box-shadow: 0px 10px 10px -10px darken($color-background, 20) inset;
 }
 
-.icon-location
-{
-    color: black;
-    margin: 0 15px 0 0;
-}
-
 .description
 {
-    padding: 60px 0 60px 0;
+    padding: 60px 5% 60px 5%;
     text-align: center;
+    
     &--titleMargin
     {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
+
     &--descriMargin
     {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }

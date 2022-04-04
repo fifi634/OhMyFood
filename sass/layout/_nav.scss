@@ -1,0 +1,39 @@
+.nav
+{
+    &--margin
+    {
+        padding: 60px 5%;
+    }
+
+    &__button
+    {
+        margin: 20px;
+        padding: 20px;
+        background-color: $color-background;
+        border-radius: 15px;
+        box-shadow: 0px 1px 10px darken($color-background, 15);
+    
+        &--active
+        {
+            @include color--active;
+        }
+    }
+
+    &__icon
+    {
+        margin: 0 7%;
+    }
+}
+
+.puce
+{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-primary;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $color-primary;
+    margin-left: -30px;
+}

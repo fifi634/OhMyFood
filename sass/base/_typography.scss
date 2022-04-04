@@ -20,17 +20,34 @@ strong
     color: $color-typo-strong;
 }
 
-.title-general
+.title
 {
-    font-size: 24px;
-    font-weight: 600;
-    color: $color-typo-title;
+    &__general
+    {
+        font-size: 24px;
+        font-weight: 600;
+        color: $color-typo-title;
+    }
+
+    &__nav
+    {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-typo-title;
+    }
 }
 
-button
+.button
 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: $color-typo-button;
+}
+
+.puce
+{
+    color: $color-typo-button;
+    font-weight: 400;
+    font-size: 14px;
 }
