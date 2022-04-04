@@ -1,0 +1,25 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "prototype du site mobile",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fifi634/OhMyFood.git"
+  },
+  "author": "Philippe Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fifi634/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/fifi634/OhMyFood#readme",
+  "browserslist": "last 4 versions"
+}
