@@ -1,10 +1,20 @@
+@import "./utils/variables";
+
+/* Typography */
+@import "./base/typography";
+
 /* Base */
 @import "./base/base";
 
 /* Container */
 @import "./layout/container";
 
+/* Components */
+@import "./components/buttons";
+
 /* Header */
 @import "./layout/header";
 
-@import "./themes/theme"
+/* Home */
+@import "./pages/home.scss";
+

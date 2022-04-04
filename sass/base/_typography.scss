@@ -1,0 +1,36 @@
+body
+{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;  
+    font-weight: 300;
+    color: $color-typo-body;
+    line-height: normal;
+}
+
+.logoTitle
+{
+    font-family: Shrikhand, cursive;
+    font-size: 26px;
+    color: black;
+}
+
+strong
+{
+    font-weight: 500;
+    color: $color-typo-strong;
+}
+
+.title-general
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: $color-typo-title;
+}
+
+button
+{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-typo-button;
+}
