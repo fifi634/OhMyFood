@@ -1,0 +1,36 @@
+.card
+{
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    margin: 20px 20px 20px 0;
+    box-shadow: 5px 5px 10px #e3e3e3;
+    flex: 1 1 auto;
+
+    &__image--frame
+    {
+        height: 220px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+
+    &__image--adapt
+    {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    &__detail
+    {  
+        line-height: 25px;
+        padding: 15px 5% 15px 5%;
+    }
+}

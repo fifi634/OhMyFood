@@ -19,10 +19,7 @@ a
     text-decoration: none;
 }
 
-.icon
+a:hover
 {
-    &--active
-    {
-        color: $color-primary;
-    }
+    color: $color-hover;
 }

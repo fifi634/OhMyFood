@@ -3,9 +3,11 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-background: #f7f7f7;
+$color-button: linear-gradient(170deg, $color-secondary, $color-primary);
+$color-hover: linear-gradient(170deg, $color-primary,$color-secondary);
 
 // Typography color
-$color-typo-body: #7b7b7b;
+$color-typo-body: #000000;
 $color-typo-strong: #000000;
 $color-typo-title: #000000;
 $color-typo-button: white;

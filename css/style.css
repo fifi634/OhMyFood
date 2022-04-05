@@ -1,10 +1,9 @@
-/* Mixin */
 /* Typography */
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #7b7b7b;
+  color: #000000;
   line-height: normal;
 }
 
@@ -27,6 +26,11 @@ strong {
 .title__nav {
   font-size: 14px;
   font-weight: 500;
+  color: #000000;
+}
+.title__small {
+  font-weight: 600;
+  font-size: 18px;
   color: #000000;
 }
 
@@ -61,8 +65,8 @@ a {
   text-decoration: none;
 }
 
-.icon--active {
-  color: #9356DC;
+a:hover {
+  color: linear-gradient(170deg, #9356DC, #FF79DA);
 }
 
 /* Container */
@@ -70,11 +74,60 @@ body {
   width: 100%;
 }
 
-/* Components */
+.section--margin {
+  padding: 60px 5%;
+}
+
+/* Button */
 .button {
   padding: 15px 20px;
   border-radius: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+}
+
+/* Card */
+.card {
+  position: relative;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  margin: 20px 20px 20px 0;
+  box-shadow: 5px 5px 10px #e3e3e3;
+  flex: 1 1 auto;
+}
+.card__image--frame {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+.card__image--adapt {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.card__detail {
+  line-height: 25px;
+  padding: 15px 5% 15px 5%;
+}
+
+/* Icon */
+.icon--active {
+  color: #9356DC;
+}
+.icon__heart {
+  position: absolute;
+  right: 0px;
+  margin: 0 5%;
+  color: black;
+}
+.icon__heart:hover {
+  color: #FF79DA;
 }
 
 /* Header */
@@ -83,10 +136,8 @@ body {
   text-align: center;
 }
 
+/* Footer */
 /* Nav */
-.nav--margin {
-  padding: 60px 5%;
-}
 .nav__button {
   margin: 20px;
   padding: 20px;
@@ -140,6 +191,13 @@ body {
 }
 .description--descriMargin {
   margin-bottom: 40px;
+}
+.description--typo {
+  color: #7b7b7b;
+}
+
+.section--background {
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */

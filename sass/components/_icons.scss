@@ -1,0 +1,20 @@
+.icon
+{
+    &--active
+    {
+        color: $color-primary;
+    }
+
+    &__heart
+    {
+        position: absolute;
+        right: 0px;
+        margin: 0 5%;
+        color: black;
+        
+        &:hover
+        {
+            color: $color-secondary;
+        }
+    }
+}
