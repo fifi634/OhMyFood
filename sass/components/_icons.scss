@@ -4,17 +4,24 @@
     {
         color: $color-primary;
     }
-
+    
     &__heart
     {
         position: absolute;
         right: 0px;
-        margin: 0 5%;
+        margin: 0 20px;
         color: black;
         
-        &:hover
+        &:hover 
         {
-            color: $color-secondary;
+            color: $color-primary;
         }
     }
+
+    &__footer
+    {
+        margin: 0 10px 0 0;
+        align-self: center;
+    }
+
 }

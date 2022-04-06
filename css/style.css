@@ -3,7 +3,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #000000;
+  color: black;
   line-height: normal;
 }
 
@@ -12,26 +12,30 @@ body {
   font-size: 26px;
   color: black;
 }
+.logoTitle--footer {
+  color: white;
+  font-size: 22px;
+}
 
 strong {
   font-weight: 500;
-  color: #000000;
+  color: black;
 }
 
 .title__general {
   font-size: 24px;
   font-weight: 600;
-  color: #000000;
+  color: black;
 }
 .title__nav {
   font-size: 14px;
   font-weight: 500;
-  color: #000000;
+  color: black;
 }
 .title__small {
   font-weight: 600;
   font-size: 18px;
-  color: #000000;
+  color: black;
 }
 
 .button {
@@ -47,9 +51,18 @@ strong {
   font-size: 14px;
 }
 
+.footer__typo {
+  color: white;
+  font-weight: 500;
+}
+
 /* Base */
 * {
   box-sizing: border-box;
+}
+
+body {
+  background-color: white;
 }
 
 .block {
@@ -66,7 +79,8 @@ a {
 }
 
 a:hover {
-  color: linear-gradient(170deg, #9356DC, #FF79DA);
+  color: #FF79DA;
+  transition: 0.3s;
 }
 
 /* Container */
@@ -83,6 +97,13 @@ body {
   padding: 15px 20px;
   border-radius: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+}
+.button:hover {
+  filter: brightness(120%);
+}
+
+.description a:hover {
+  color: white;
 }
 
 /* Card */
@@ -113,7 +134,7 @@ body {
 }
 .card__detail {
   line-height: 25px;
-  padding: 15px 5% 15px 5%;
+  padding: 15px 20px 15px 20px;
 }
 
 /* Icon */
@@ -123,11 +144,15 @@ body {
 .icon__heart {
   position: absolute;
   right: 0px;
-  margin: 0 5%;
+  margin: 0 20px;
   color: black;
 }
 .icon__heart:hover {
-  color: #FF79DA;
+  color: #9356DC;
+}
+.icon__footer {
+  margin: 0 10px 0 0;
+  align-self: center;
 }
 
 /* Header */
@@ -137,6 +162,20 @@ body {
 }
 
 /* Footer */
+footer {
+  background-color: #353535;
+  padding: 25px;
+}
+
+.logoTitle--footer {
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.footer__typo li {
+  margin: 0 0 8px 0;
+}
+
 /* Nav */
 .nav__button {
   margin: 20px;
@@ -149,7 +188,7 @@ body {
   background-color: rgba(215, 192, 242, 0.3);
 }
 .nav__icon {
-  margin: 0 7%;
+  margin: 0 20px;
 }
 
 .puce {

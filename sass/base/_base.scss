@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+body
+{
+    background-color: $color-background-body;
+}
+
 .block
 {
     display: block;
@@ -22,4 +27,5 @@ a
 a:hover
 {
     color: $color-hover;
+    transition: 0.3s;
 }

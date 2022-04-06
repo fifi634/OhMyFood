@@ -4,7 +4,7 @@
     height: auto;
     width: 100%;
     border-radius: 20px;
-    background-color: white;
+    background-color: $color-background-card;
     margin: 20px 20px 20px 0;
     box-shadow: 5px 5px 10px #e3e3e3;
     flex: 1 1 auto;
@@ -31,6 +31,6 @@
     &__detail
     {  
         line-height: 25px;
-        padding: 15px 5% 15px 5%;
+        padding: 15px 20px 15px 20px;
     }
 }

@@ -4,3 +4,14 @@
     $color: lighten($color, 25);
     background-color: $color;
 }
+
+@mixin typo--color($color: $color-background-body)
+{
+    @if (lightness($color) < 50%)
+    {
+        $color: white;
+    } @else {
+        $color: black;
+    }
+    color: $color;
+}

@@ -3,4 +3,17 @@
     padding: 15px 20px;
     border-radius: 30px;
     background: $color-button;
+
+    &:hover
+    {
+        filter:  brightness(120%);
+    }
+}
+
+.description
+{
+    a:hover
+    {
+        color: $color-typo-button;
+    }
 }
