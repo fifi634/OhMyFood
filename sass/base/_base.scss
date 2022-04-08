@@ -28,4 +28,11 @@ a:hover
 {
     color: $color-hover;
     transition: 0.3s;
+    cursor: pointer;
+
+    h2, h3
+    {
+        color: $color-hover;
+        transition: 0.3s;
+    }
 }
