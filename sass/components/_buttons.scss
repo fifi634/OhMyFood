@@ -3,7 +3,7 @@
     padding: 15px 20px;
     border-radius: 30px;
     background: $color-button;
-    color: $color-typo-button !important;
+    color: $color-typo-button !important; //!important because automatic color with mixin/typo--color
     border: none;
 
     &:hover

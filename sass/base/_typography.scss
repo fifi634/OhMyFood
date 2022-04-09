@@ -33,14 +33,12 @@ strong
         font-weight: 600;
         @include typo--color($color-background-section);
     }
-
     &__nav
     {
         font-size: 14px;
         font-weight: 500;
         @include typo--color($color-background-section);
     }
-
     &__small
     {
         font-weight: 600;

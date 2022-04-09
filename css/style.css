@@ -202,6 +202,7 @@ a:hover h2, a:hover h3 {
 }
 .icon__heart--lock {
   display: none;
+  color: linear-gradient(170deg, #FF79DA, #9356DC);
 }
 .icon__heart--unlock {
   display: inline;
