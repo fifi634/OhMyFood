@@ -4,17 +4,34 @@
     {
         color: $color-primary;
     }
-    
+
     &__heart
     {
         position: absolute;
         right: 0px;
         margin: 0 20px;
-        color: black;
+        color: $color-button;
         
-        &:hover 
+        &--lock
         {
-            color: $color-primary;
+            display: none;
+            color: $color-button;
+        }
+        &--unlock
+        {
+            display: inline;
+        }
+        &:hover 
+        {            
+            .icon__heart--unlock
+            {
+                display: none;
+            }
+    
+            .icon__heart--lock
+            {
+                display: inline;
+            }
         }
     }
 

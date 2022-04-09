@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="desciption" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !">
-    <title>Oh My Food</title>
+    <title>Ohmyfood!</title>
     <!-- CSS Reset -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Fontawesome icon CDN -->
@@ -30,15 +30,18 @@
 
     <main>
         <section class="location">
-            <div class="flex position">
-                <i class="location__icon fa-solid fa-location-dot"></i>
-                <strong>Paris, Belleville</strong>
-            </div>
-            <div class="description">
-                <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h1>
-                <p class="description--descriMargin description--typo">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <a href="#" class="button">Explorer nos restaurants</a>
-            </div>
+            <form class="form__position" method="post" action="index.html">
+                <div class="form__position--center">
+                    <i class="location__icon fa-solid fa-location-dot"></i>
+                    <input type="search" value="Paris, Belleville" placholder="entrer votre ville qui ne peut être que Paris car nous sommes présent qu'à Paris"/>
+                </div>
+
+                <article class="description">
+                    <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h1>
+                    <p class="description--descriMargin description--typo">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <input type="submit" class="button" value="Explorer nos restaurants">
+                </article>
+            </form>
         </section>
 
         <nav class="section--margin">
@@ -85,7 +88,10 @@
                     </div>
                     <div class="card__detail">
                         <h3 class="title__small">La palette du goût</h3>
-                        <i class="icon__heart fa-regular fa-heart fa-lg"></i>
+                        <div class="icon__heart">
+                            <i class="icon__heart--unlock fa-regular fa-heart fa-lg"></i>
+                            <i class="icon__heart--lock fa-solid fa-heart fa-lg"></i>    
+                        </div>
                         <p>Ménilmontant</p>
                     </div>
                 </article>
@@ -104,7 +110,10 @@
                     </div>
                     <div class="card__detail">
                         <h3 class="title__small">La note enchantée</h3>
-                        <i class="icon__heart fa-regular fa-heart fa-lg"></i>
+                        <div class="icon__heart">
+                            <i class="icon__heart--unlock fa-regular fa-heart fa-lg"></i>
+                            <i class="icon__heart--lock fa-solid fa-heart fa-lg"></i>    
+                        </div>
                         <p>Charonne</p>
                     </div>
                 </article>
@@ -122,7 +131,10 @@
                     </div>
                     <div class="card__detail">
                         <h3 class="title__small">&#193; la française</h3>
-                        <i class="icon__heart fa-regular fa-heart fa-lg"></i>
+                        <div class="icon__heart">
+                            <i class="icon__heart--unlock fa-regular fa-heart fa-lg"></i>
+                            <i class="icon__heart--lock fa-solid fa-heart fa-lg"></i>    
+                        </div>
                         <p>Cité Rouge</p>
                     </div>
                 </article>
@@ -140,7 +152,10 @@
                     </div>
                     <div class="card__detail">
                         <h3 class="title__small">Le délice des sens</h3>
-                        <i class="icon__heart fa-regular fa-heart fa-lg"></i>
+                        <div class="icon__heart">
+                            <i class="icon__heart--unlock fa-regular fa-heart fa-lg"></i>
+                            <i class="icon__heart--lock fa-solid fa-heart fa-lg"></i>    
+                        </div>
                         <p>Folie-Méricourt</p>
                     </div>
                 </article>

@@ -1,0 +1,17 @@
+.form__position
+{
+    input[type="search"]
+    {
+        -webkit-appearance: none;
+        border: none;
+        background-color: inherit;
+    }
+    input
+    {
+        
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        @include typo--color($color-background-section);
+    }
+}
