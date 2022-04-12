@@ -1,13 +1,13 @@
-@mixin color--active($color: $color-primary)
+@mixin color--active($color: $color-primary) 
 {
     $color: rgba($color, 0.3);
     $color: lighten($color, 25);
     background-color: $color;
 }
 
-@mixin typo--color($color: $color-background-body)
+@mixin typo--color($color: $color-background-body) 
 {
-    @if (lightness($color) < 50%)
+    @if (lightness($color) < 50%) 
     {
         $color: white;
     } @else {

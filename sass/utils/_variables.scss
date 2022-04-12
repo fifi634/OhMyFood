@@ -6,9 +6,10 @@ $color-tertiary: #99E2D0;
 $color-background-section: #f7f7f7;
 $color-background-card : white;
 $color-background-footer: #353535;
-$color-background-body: white;
+$color-background-body: white; 
 
 $color-button: linear-gradient(170deg, $color-secondary, $color-primary);
+$color-heart-active: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
 $color-hover: $color-secondary;
 
 // Typography color

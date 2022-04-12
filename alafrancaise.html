@@ -23,74 +23,75 @@
 </head>
 <body>
     <header class="flex">
-            <i class="fa-solid fa-arrow-left"></i>
-            <a href="index.html">
-                <h1 class="logoTitle">ohmyfood</h1>
+            <a href="index.html" class="toMenu"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+            <a href="index.html" class="header__logoPositionMenu">
+                <h1 class="logoTitle logoTitle--header">ohmyfood</h1>
             </a>
     </header>
 
-    <main>
-        <div>
-            <img class="card__image--adapt" src="images/restaurants/jay-wennington-1680.jpg"
+    <main class="backgroundMenu">
+        <div class="menu__image--frame">
+            <img src="images/restaurants/toa-heftiba-1680.jpg"
             alt="Restaurant La Palette du Goût"
-            srcset="images/restaurants/jay-wennington-1280.jpg 1280w,
-                    images/restaurants/jay-wennington-720.jpg 720w,
-                    images/restaurants/jay-wennington-540.jpg 540w"
+            srcset="images/restaurants/toa-heftiba-1280.jpg 1280w,
+                    images/restaurants/toa-heftiba-720.jpg 720w,
+                    images/restaurants/toa-heftiba-540.jpg 540w"
             sizes="100vm"/>
         </div>
 
-        <div>
-            <div>
-                <h2 class="logoTitle">&#192; la française</h2>
-                <div class="icon__heart">
-                    <i class="icon__heart--unlock fa-regular fa-heart fa-lg"></i>
-                    <i class="icon__heart--lock fa-solid fa-heart fa-lg"></i>    
+        <div class="menu menu--margin">
+            <div class="flex">
+                <h2 class="logoTitle logoTitle--menu">&#192; la française</h2>
+                <div class="icon__heart icon__heart--menuPosition">
+                    <a href="#"><i class="icon__heart--unlock fa-regular fa-heart fa-xl"></i></a>
+                    <a href="#"><i class="icon__heart--lock fa-solid fa-heart fa-xl"></i></a>
                 </div>
             </div>
 
             <section>
-                <h3>ENTR&#201;E</h3>
-                <article class="nav__button">
-                    <a href="#" >
+                <h3 class="menuLevel">ENTR&#201;ES</h3>
+                <div class="menuLevel__border"></div>
+                <article class="cardMenu--padding nav__button nav__button--menu ">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Tartare de poulpe acidulé</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Tartare de poulpe acidulé</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div>
-                            <p>Aux zests d'orange</p>
-                            <p>25€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Aux zests d'orange</p>
+                            <p class="price">25€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Velouté de légumes d'antan</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Velouté de légumes d'antan</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Carotte, panais, topinambour</p>
-                            <p>35€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Carotte, panais, topinambour</p>
+                            <p class="price">35€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Soupe à l'oignon</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Soupe à l'oignon</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Revisitée</p>
-                            <p>20€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Revisitée</p>
+                            <p class="price">20€</p>
                         </div>
                     </a>
                 </article>
@@ -98,101 +99,103 @@
             </section>
 
             <section>
-                <h3>PLATS</h3>
-                <article class="nav__button">
-                    <a href="#">
+                <h3 class="menuLevel">PLATS</h3>
+                <div class="menuLevel__border"></div>
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Coquilles Saint-Jacques</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Coquilles Saint-Jacques</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Accompagnées d'une purée de panais</p>
-                            <p>40€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Accompagnées d'une purée de panais</p>
+                            <p class="price">40€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Magret de canard</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal meal">Magret de canard</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Et parmentier de pommes de terres</p>
-                            <p>35€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Et parmentier de pommes de terres</p>
+                            <p class="price">35€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Pigeonneau d'Ille-et-Vilaine</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Sur son lit de gnocchis aux légumes</p>
-                            <p>44€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Sur son lit de gnocchis aux légumes</p>
+                            <p class="price">44€</p>
                         </div>
                     </a>
                 </article>
             </section>
 
             <section>
-                <h3>DESSERTS</h3>
-                <article class="nav__button">
-                    <a href="#">
+                <h3 class="menuLevel">DESSERTS</h3>
+                <div class="menuLevel__border"></div>
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Pétales de violettes glacés</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Pétales de violettes glacés</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Et purée de noisettes</p>
-                            <p>18€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Et purée de noisettes</p>
+                            <p class="price">18€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Fondant au chocolat</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Fondant au chocolat</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Revisité</p>
-                            <p>22€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Revisité</p>
+                            <p class="price">22€</p>
                         </div>
                     </a>
                 </article>
 
-                <article class="nav__button">
-                    <a href="#">
+                <article class="cardMenu--padding nav__button nav__button--menu">
+                    <a href="#" class="flex cardMenu">
                         <div class="flex">
-                            <h4>Millefeuille croustillant</h4>
-                            <div>
-                                <i class="fa-solid fa-circle-check"></i>
+                            <h4 class="title__small meal">Millefeuille croustillant</h4>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
                             </div>
                         </div>
-                        <div class="flex">
-                            <p>Myrtilles et pâte d'amande</p>
-                            <p>23€</p>
+                        <div class="flex cardMenu__item">
+                            <p class="ingredient">Myrtilles et pâte d'amande</p>
+                            <p class="price">23€</p>
                         </div>
                     </a>
                 </article>
             </section>  
-            <a href="#" class="button">Commander</a>
+            <a href="#" class="flex button button__menu">Commander</a>
         </div>
     </main>
 

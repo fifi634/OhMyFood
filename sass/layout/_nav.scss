@@ -1,26 +1,28 @@
-.nav
-{
-    &__button
-    {
+.nav {
+    &__button {
         margin: 20px;
         padding: 20px;
         background-color: $color-background-section;
         border-radius: 15px;
         box-shadow: 0px 1px 10px darken($color-background-section, 15);
 
-        &--active
-        {
+        &--active {
             @include color--active;
         }
+
+        &--menu {
+            position: relative;
+            margin: 20px 0;
+            padding: 0;
+            background-color: $color-background-card;
+        }
     }
-    &__icon
-    {
+    &__icon {
         margin: 0 20px;
     }
 }
 
-.puce
-{
+.puce {
     justify-content: center;
     align-items: center;
     border: 1px solid $color-primary;

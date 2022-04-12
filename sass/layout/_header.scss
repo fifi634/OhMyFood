@@ -1,5 +1,17 @@
-.logoTitle
-{
+.header {
+    &__logoPositionHome {       
+        text-align: center;
+    }
+    &__logoPositionMenu {
+        margin: auto;
+    }
+}
+
+.logoTitle--header {        //.logoTitle in _typography.scss for font-style
     margin: 10px 0;
-    text-align: center;
+}
+
+.toMenu {
+    margin: 20px;
+    position: absolute;
 }

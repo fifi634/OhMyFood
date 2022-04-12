@@ -1,5 +1,4 @@
-.card
-{
+.card {
     position: relative;
     height: auto;
     width: 100%;
@@ -9,15 +8,13 @@
     box-shadow: 5px 5px 10px #e3e3e3;
     flex: 1 1 auto;
 
-    &__image--frame
-    {
+    &__image--frame {
         height: 220px;
         width: 100%;
         overflow: hidden;
         border-radius: 20px 20px 0 0;
     }
-    &__image--adapt
-    {
+    &__image--adapt {
         position: relative;
         margin: auto;
         width: 100%;
@@ -26,9 +23,37 @@
         left: 50%;
         transform: translate(-50%, -60%);
     }
-    &__detail
-    {  
+    &__detail {  
         line-height: 25px;
         padding: 15px 20px 15px 20px;
+    }
+    &__new {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        border: none;
+        padding: 8px 15px 8px 15px;
+        border-radius: 3px;
+        background-color: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 40);
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.cardMenu {
+    flex-direction: column;
+    position: relative;
+
+    &--padding {
+        padding: 0;
+    }
+
+    &:hover {
+        color: inherit;
+        .cardMenu__item {
+            transform: translateX(-60px);
+        }
     }
 }

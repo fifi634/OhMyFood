@@ -1,44 +1,44 @@
-.icon
-{
-    &--active
-    {
+.icon {
+    &--active {
         color: $color-primary;
     }
 
-    &__heart
-    {
-        position: absolute;
-        right: 0px;
-        margin: 0 20px;
-        color: $color-button;
-        
-        &--lock
-        {
+    &__heart {       
+        &--lock {
             display: none;
-            color: $color-button;
         }
-        &--unlock
-        {
-            display: inline;
+        &--unlock {
+            display: block;
         }
-        &:hover 
-        {            
-            .icon__heart--unlock
-            {
+        &:hover {       
+            .icon__heart--unlock {
                 display: none;
             }
-    
-            .icon__heart--lock
-            {
-                display: inline;
+            .icon__heart--lock {
+                display: block;
             }
+        }
+        &--homePosition {
+            position: absolute;
+            right: 0px;
+            margin: -5px 30px;
+            z-index: 1;
+        }
+        &--menuPosition {
+            position: absolute;
+            right: 60px;
+            top: 55px;
         }
     }
 
-    &__footer
-    {
+    &__mealChecked {
+        position: relative;
+        top: 50%;
+        left: 32%;
+    }
+
+    &__footer {
         margin: 0 10px 0 0;
         align-self: center;
     }
-
 }

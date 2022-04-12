@@ -1,5 +1,4 @@
-body
-{
+body {
     font-family: Roboto, sans-serif;
     font-size: 16px;  
     font-weight: 300;
@@ -7,63 +6,58 @@ body
     line-height: normal;
 }
 
-.logoTitle
-{
+.logoTitle {
     font-family: Shrikhand, cursive;
     font-size: 26px;
     @include typo--color($color-background-body);
-    &--footer
-    {
+
+    &--footer {
         @include typo--color($color-background-footer);
         font-size: 22px;
     }
+
+    &--menu {
+        font-size: 28px;
+    }
 }
 
-strong
-{
+strong {
     font-weight: 500;
     @include typo--color($color-background-section);
 }
 
-.title
-{
-    &__general
-    {
+.title {
+    &__general {
         font-size: 24px;
         font-weight: 600;
         @include typo--color($color-background-section);
     }
-    &__nav
-    {
+    &__nav {
         font-size: 14px;
         font-weight: 500;
         @include typo--color($color-background-section);
     }
-    &__small
-    {
+    &__small {
         font-weight: 600;
         font-size: 18px;
         @include typo--color($color-background-card);
     }
 }
 
-.button
-{
+.button {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: $color-typo-button;
 }
 
-.puce
-{
+.puce {
     color: $color-typo-button;
     font-weight: 400;
     font-size: 14px;
 }
 
-.footer__typo
-{
+.footer__typo {
     @include typo--color($color-background-footer);
     font-weight: 500;
 }

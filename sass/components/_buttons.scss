@@ -1,21 +1,23 @@
-.button
-{
+.button {
     padding: 15px 20px;
     border-radius: 30px;
     background: $color-button;
     color: $color-typo-button !important; //!important because automatic color with mixin/typo--color
     border: none;
 
-    &:hover
-    {
+    &:hover {
         filter:  brightness(120%);
+    }
+
+    &__menu {
+        width:150px;
+        margin: 50px auto 0 auto;
+        justify-content: center;
     }
 }
 
-.description
-{
-    a:hover
-    {
+.description {
+    a:hover {
         color: $color-typo-button;
     }
 }
