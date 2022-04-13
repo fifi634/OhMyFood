@@ -1,3 +1,4 @@
+//Color lightening
 @mixin color--active($color: $color-primary) 
 {
     $color: rgba($color, 0.3);
@@ -5,6 +6,7 @@
     background-color: $color;
 }
 
+//Color inversion
 @mixin typo--color($color: $color-background-body) 
 {
     @if (lightness($color) < 50%) 
@@ -14,4 +16,14 @@
         $color: black;
     }
     color: $color;
+}
+
+//Position 0 0 0 0
+@mixin pseudo-element {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
