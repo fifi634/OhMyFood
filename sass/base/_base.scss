@@ -35,3 +35,13 @@ strong {
     font-weight: inherit;
     
 }
+
+.appearance {
+    opacity: 0;
+
+    @for $i from 0 through 9 {
+        &--delay#{$i} {
+            animation: Appearance $time-appearance calc(200ms * $i) forwards;
+        }
+    }
+}

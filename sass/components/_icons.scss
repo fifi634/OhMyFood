@@ -3,66 +3,26 @@
         color: $color-primary;
     }
 
-    &__heart {    
+    &__heart {            
         &--lock {
-            z-index: -1;
-            opacity: 0;
-            position: absolute;
-            color: $color-primary;
-            transition: opacity 250ms;
+            display: none;
+            // color: linear-gradient(170deg, $color-secondary, $color-primary);
+            background:green;
         }
         &--unlock {
-            position: relative;
-            z-index: 1;
-            opacity: 1;
+            display: block;
         }
-
-        &:hover {
-            &.icon__heart--lock {
-                opacity: 1;
-                z-index: 1;
+        &:hover {       
+            .icon__heart--unlock {
+                display: none;
+                // background-color: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
             }
-            &.icon__heart--unlock {
-                opacity: 0;
+            .icon__heart--lock {
+                display: block;
+                animation: progressHeart $time-appearance;
+                // background-color: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
             }
         }
-        
-        // &--lock {
-        //     display: none;
-        //     color: $color-primary;
-        //     transform: scaleY(0.5);
-        //     transform-origin: bottom;
-        // }
-        // &--unlock {
-        //     display: block;
-        // }
-        // &:hover {       
-        //     .icon__heart--unlock {
-        //         display: none;
-        //     }
-        //     .icon__heart--lock {
-        //         display: block;
-        //         animation: progressHeart 250ms;
-
-        //     }
-        // }
-
-
-
-    // &__heart {
-    //     &::after {
-    //         font-family: 'Font Awesome 5 Free';
-    //         content: "\f004";
-    //         font-size: 1.5em;
-    //         background-color: white;
-    //         background-image: $color-heart-active;
-    //         position: absolute;
-    //         top: 20px;
-    //         right: 10%;
-    //     }
-    //     &:hover::after {
-    //         animation: opacity 600ms ease both;
-    //     }
 
         &--homePosition {
             position: absolute;
@@ -72,15 +32,19 @@
         }
         &--menuPosition {
             position: absolute;
-            right: 60px;
-            top: 55px;
+            right: 0px;
+            top: 50px;
+            margin: 0px 10% 0 0 ;
         }
     }
 
     &__mealChecked {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         top: 50%;
-        left: 32%;
+        animation: Rotate calc($time-appearance/2) both;
     }
 
     &__footer {

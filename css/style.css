@@ -1,11 +1,4 @@
-@keyframes progressHeart {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
+@keyframes progressHeart {}
 @keyframes Appearance {
   0% {
     opacity: 0;
@@ -14,6 +7,39 @@
   100% {
     opacity: 1;
     transform: translateY(1);
+  }
+}
+@keyframes Checked {
+  0% {
+    transform: translateX(60px);
+    overflow: hidden;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes TranslateX {
+  0% {
+    transform: translateX(0);
+    animation-delay: 10ms;
+  }
+  50% {
+    transform: translateX(-60px);
+    transition: translate 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.27, 1.55);
+  }
+  100% {
+    transform: translateX(-35px);
+    transition: translate 1s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0, 1);
+  }
+}
+@keyframes Rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* Reset CSS */
@@ -169,6 +195,40 @@ strong {
   font-weight: inherit;
 }
 
+.appearance {
+  opacity: 0;
+}
+.appearance--delay0 {
+  animation: Appearance 1s 0ms forwards;
+}
+.appearance--delay1 {
+  animation: Appearance 1s 200ms forwards;
+}
+.appearance--delay2 {
+  animation: Appearance 1s 400ms forwards;
+}
+.appearance--delay3 {
+  animation: Appearance 1s 600ms forwards;
+}
+.appearance--delay4 {
+  animation: Appearance 1s 800ms forwards;
+}
+.appearance--delay5 {
+  animation: Appearance 1s 1000ms forwards;
+}
+.appearance--delay6 {
+  animation: Appearance 1s 1200ms forwards;
+}
+.appearance--delay7 {
+  animation: Appearance 1s 1400ms forwards;
+}
+.appearance--delay8 {
+  animation: Appearance 1s 1600ms forwards;
+}
+.appearance--delay9 {
+  animation: Appearance 1s 1800ms forwards;
+}
+
 /* Button */
 .button {
   padding: 15px 20px;
@@ -238,6 +298,9 @@ strong {
   font-weight: 600;
 }
 
+.cardMenu {
+  overflow: hidden;
+}
 .cardMenu__content {
   flex-direction: column;
   position: relative;
@@ -248,21 +311,8 @@ strong {
 .cardMenu__content:hover {
   color: inherit;
 }
-.cardMenu__content:hover .cardMenu__item {
-  transform: translateX(-60px);
-}
-
-.appearance {
-  opacity: 0;
-}
-.appearance--delay0 {
-  animation: Appearance 1s 0ms forwards;
-}
-.appearance--delay1 {
-  animation: Appearance 1s 200ms forwards;
-}
-.appearance--delay2 {
-  animation: Appearance 1s 400ms forwards;
+.cardMenu__content:hover .translate {
+  animation: TranslateX 1s forwards;
 }
 
 /* Icon */
@@ -270,23 +320,18 @@ strong {
   color: #9356DC;
 }
 .icon__heart--lock {
-  z-index: -1;
-  opacity: 0;
-  position: absolute;
-  color: #9356DC;
-  transition: opacity 250ms;
+  display: none;
+  background: green;
 }
 .icon__heart--unlock {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
+  display: block;
 }
-.icon__heart:hover.icon__heart--lock {
-  opacity: 1;
-  z-index: 1;
+.icon__heart:hover .icon__heart--unlock {
+  display: none;
 }
-.icon__heart:hover.icon__heart--unlock {
-  opacity: 0;
+.icon__heart:hover .icon__heart--lock {
+  display: block;
+  animation: progressHeart 1s;
 }
 .icon__heart--homePosition {
   position: absolute;
@@ -296,13 +341,17 @@ strong {
 }
 .icon__heart--menuPosition {
   position: absolute;
-  right: 60px;
-  top: 55px;
+  right: 0px;
+  top: 50px;
+  margin: 0px 10% 0 0;
 }
 .icon__mealChecked {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 50%;
-  left: 32%;
+  animation: Rotate 0.5s both;
 }
 .icon__footer {
   margin: 0 10px 0 0;
@@ -471,15 +520,22 @@ footer {
 
 .meal {
   padding: 10px 15px 0 15px;
+  text-overflow: ellipsis;
 }
 
 .ingredient {
+  position: relative;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   line-height: 1.5em;
   padding: 0 15px 10px 15px;
+  left: 0;
 }
 
 .price {
   position: absolute;
+  display: block;
   right: 30px;
   font-weight: 600;
 }
@@ -493,10 +549,13 @@ footer {
   width: 60px;
   height: 100%;
   border-radius: 0 15px 15px 0;
+  overflow: hidden;
 }
 
 a:hover .mealChecked {
   display: block;
+  animation: Checked 0.5s;
+  transform-origin: center;
 }
 
 /*# sourceMappingURL=style.css.map */

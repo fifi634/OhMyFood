@@ -43,34 +43,20 @@
 }
 
 .cardMenu {
-    
+    overflow: hidden;
+
     &__content {
         flex-direction: column;
         position: relative;
         
         &--padding {
             padding: 0;
-        }
-    
+        }    
         &:hover {
             color: inherit;
-            .cardMenu__item {
-                transform: translateX(-60px);
+            .translate {
+                animation: TranslateX $time-appearance forwards;
             }
         }
-    }
-}
-
-.appearance {
-    opacity: 0;
-    
-    &--delay0 {
-        animation: Appearance 1s 0ms forwards;
-    }
-    &--delay1 {
-        animation: Appearance 1s 200ms forwards;
-    }
-    &--delay2 {
-        animation: Appearance 1s 400ms forwards;
     }
 }
