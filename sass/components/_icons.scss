@@ -2,28 +2,37 @@
     &--active {
         color: $color-primary;
     }
-
-    &__heart {            
-        &--lock {
-            display: none;
-            // color: linear-gradient(170deg, $color-secondary, $color-primary);
-            background:green;
-        }
+    &__heart {   
         &--unlock {
-            display: block;
+            position: relative;
         }
-        &:hover {       
-            .icon__heart--unlock {
-                display: none;
-                // background-color: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
-            }
-            .icon__heart--lock {
-                display: block;
-                animation: progressHeart $time-appearance;
-                // background-color: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
+
+        &--lock {
+            opacity: 0;
+            color: $color-secondary;
+
+            //test pour coeur avec couleur dégradé
+            // background: linear-gradient(170deg, $color-secondary, $color-primary);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            
+            &Menu {
+                position: absolute;
+                top: 9px;
+                right: 0;
+                bottom: 0;
+                left: 0px;
             }
         }
 
+        
+
+        &:hover { 
+            .icon__heart--lock {
+                opacity: 1;
+                animation: progressHeart $time-appearance both;  
+            }
+        }
         &--homePosition {
             position: absolute;
             right: 0px;
@@ -33,11 +42,10 @@
         &--menuPosition {
             position: absolute;
             right: 0px;
-            top: 50px;
+            top: 40px;
             margin: 0px 10% 0 0 ;
         }
     }
-
     &__mealChecked {
         position: relative;
         display: flex;
@@ -46,9 +54,32 @@
         top: 50%;
         animation: Rotate calc($time-appearance/2) both;
     }
-
     &__footer {
         margin: 0 10px 0 0;
         align-self: center;
+    }
+}
+
+
+
+
+// test pour coeur avec couleur dégradé
+.heart {
+    &::after {
+        font-family: $font-icone;
+        content: '\f004';
+        font-size: 1.5em;
+        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke-color: black;
+        background-color: white;
+        background-image: $color-heart-active;
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color: $color-background-card;        
+    }
+    &:hover::after {
+        -webkit-text-stroke: 0px;
+        -webkit-text-fill-color: transparent;
+        animation: progressHeart $time-appearance both;
     }
 }

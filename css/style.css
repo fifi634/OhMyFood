@@ -1,4 +1,11 @@
-@keyframes progressHeart {}
+@keyframes progressHeart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes Appearance {
   0% {
     opacity: 0;
@@ -181,13 +188,18 @@ a {
 }
 
 a:hover {
-  color: #FF79DA;
+  color: #9356DC;
   transition: 0.3s;
   cursor: pointer;
 }
 a:hover h2, a:hover h3 {
-  color: #FF79DA;
+  color: #9356DC;
   transition: 0.3s;
+}
+
+.card:hover img {
+  filter: grayscale(1);
+  transition: 0.5s;
 }
 
 strong {
@@ -304,6 +316,8 @@ strong {
 .cardMenu__content {
   flex-direction: column;
   position: relative;
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 .cardMenu__content--padding {
   padding: 0;
@@ -319,19 +333,23 @@ strong {
 .icon--active {
   color: #9356DC;
 }
-.icon__heart--lock {
-  display: none;
-  background: green;
-}
 .icon__heart--unlock {
-  display: block;
+  position: relative;
 }
-.icon__heart:hover .icon__heart--unlock {
-  display: none;
+.icon__heart--lock {
+  opacity: 0;
+  color: #FF79DA;
+}
+.icon__heart--lockMenu {
+  position: absolute;
+  top: 9px;
+  right: 0;
+  bottom: 0;
+  left: 0px;
 }
 .icon__heart:hover .icon__heart--lock {
-  display: block;
-  animation: progressHeart 1s;
+  opacity: 1;
+  animation: progressHeart 1s both;
 }
 .icon__heart--homePosition {
   position: absolute;
@@ -342,7 +360,7 @@ strong {
 .icon__heart--menuPosition {
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 40px;
   margin: 0px 10% 0 0;
 }
 .icon__mealChecked {
@@ -356,6 +374,24 @@ strong {
 .icon__footer {
   margin: 0 10px 0 0;
   align-self: center;
+}
+
+.heart::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f004";
+  font-size: 1.5em;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke-color: black;
+  background-color: white;
+  background-image: radial-gradient(circle at bottom left, #FF79DA 0%, #9356DC 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: white;
+}
+.heart:hover::after {
+  -webkit-text-stroke: 0px;
+  -webkit-text-fill-color: transparent;
+  animation: progressHeart 1s both;
 }
 
 /* Container */
@@ -520,7 +556,9 @@ footer {
 
 .meal {
   padding: 10px 15px 0 15px;
+  white-space: wrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .ingredient {

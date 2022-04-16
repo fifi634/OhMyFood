@@ -45,9 +45,12 @@
 .cardMenu {
     overflow: hidden;
 
+  
     &__content {
         flex-direction: column;
         position: relative;
+        text-overflow: ellipsis;
+        white-space: wrap;
         
         &--padding {
             padding: 0;

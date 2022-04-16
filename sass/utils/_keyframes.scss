@@ -1,21 +1,12 @@
-//Filling of hearts
+//Filling of hearts appearance
 @keyframes progressHeart {
     0% {
-        // transform: scale(0.5);
+        transform: scale(0);
+        
     }
-    // 17% {
-    //     transform: scaleY(.34);
-    // }
-    // 24% {
-    //     transform: scaleY(.4);
-    //     animation-timing-function: cubic-bezier(.25,0,.25,1);
-    // }
-    // 46% {
-    //     transform: scaleY(.4);
-    //     animation-timing-function: cubic-bezier(.25, 0, .25, 1);
-    // }
     100% {
-        // transform: scale(1);
+        transform: scale(1);
+    
     }
 }
 
