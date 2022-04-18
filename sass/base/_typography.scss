@@ -1,4 +1,4 @@
-body {
+body, .ingredient {
     font-family: Roboto, sans-serif;
     font-size: 16px;  
     font-weight: 300;
@@ -60,4 +60,9 @@ strong {
 .footer__typo {
     @include typo--color($color-background-footer);
     font-weight: 500;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 16px;
 }

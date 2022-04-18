@@ -42,23 +42,21 @@
     }
 }
 
-.cardMenu {
+.cardMenu, .cardMenu label { 
     overflow: hidden;
-
-  
+    cursor: pointer;
     &__content {
         flex-direction: column;
         position: relative;
-        text-overflow: ellipsis;
-        white-space: wrap;
         
-        &--padding {
-            padding: 0;
-        }    
         &:hover {
             color: inherit;
             .translate {
                 animation: TranslateX $time-appearance forwards;
+            }
+            .mealChecked {
+                display: block;
+                animation: Checked calc($time-appearance/2);
             }
         }
     }

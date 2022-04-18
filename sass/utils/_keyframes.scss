@@ -1,12 +1,10 @@
 //Filling of hearts appearance
 @keyframes progressHeart {
     0% {
-        transform: scale(0);
-        
+        transform: scale(0);        
     }
     100% {
         transform: scale(1);
-    
     }
 }
 
@@ -15,7 +13,6 @@
     0% {
         opacity: 0;
         transform: translateY(10px);
-
     }
     100% {
         opacity: 1;
@@ -27,14 +24,13 @@
 @keyframes Checked {
     0% {
         transform: translateX(60px);
-        overflow: hidden;
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
 
-//Translate X right > left
+//Translate X : right > left
 @keyframes TranslateX {
     0% {
         transform: translateX(0);
@@ -44,7 +40,6 @@
         transform: translateX(-60px);
         transition: translate $time-appearance;  
         animation-timing-function: cubic-bezier(0, 0.5, 0.27, 1.55);
-        
     }
     100% {
         transform: translateX(-35px);
