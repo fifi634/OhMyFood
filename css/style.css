@@ -49,6 +49,25 @@
     transform: rotate(360deg);
   }
 }
+@keyframes IngredientSlip {
+  0% {
+    width: 65%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes MealSlip {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 /* Reset CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -202,7 +221,7 @@ a:hover h2, a:hover h3 {
   transition: 0.3s;
 }
 
-.card:hover img {
+.card:hover .card__image--frame > img {
   filter: grayscale(1);
   transition: 0.5s;
 }
@@ -315,21 +334,26 @@ strong {
   font-weight: 600;
 }
 
-.cardMenu, .cardMenu label {
+.cardMenu {
   overflow: hidden;
   cursor: pointer;
-}
-.cardMenu__content, .cardMenu label__content {
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
-.cardMenu__content:hover, .cardMenu label__content:hover {
+.cardMenu:hover {
   color: inherit;
 }
-.cardMenu__content:hover .translate, .cardMenu label__content:hover .translate {
+.cardMenu:hover .meal {
+  animation: MealSlip 0.5s forwards;
+}
+.cardMenu:hover .ingredient {
+  animation: IngredientSlip 1s forwards;
+}
+.cardMenu:hover .translate {
   animation: TranslateX 1s forwards;
 }
-.cardMenu__content:hover .mealChecked, .cardMenu label__content:hover .mealChecked {
+.cardMenu:hover .mealChecked {
   display: block;
   animation: Checked 0.5s;
 }
@@ -338,21 +362,25 @@ strong {
 .icon--active {
   color: #9356DC;
 }
+.icon__heart {
+  position: relative;
+}
 .icon__heart--unlock {
   position: relative;
 }
 .icon__heart--lock {
+  position: absolute;
+  top: -10px;
   opacity: 0;
-  color: #FF79DA;
-  /* test 2 pour coeur dégradé */
-  /* test 1 pour coeur avec couleur dégradé */
+  width: 20px;
 }
 .icon__heart--lockMenu {
   position: absolute;
-  top: 9px;
-  right: -3px;
+  top: -3px;
+  right: 0px;
   bottom: 0;
   left: 0px;
+  width: 24px;
 }
 .icon__heart:hover .icon__heart--lock {
   opacity: 1;
@@ -545,6 +573,7 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  max-width: 100%;
 }
 
 .ingredient {
@@ -552,6 +581,7 @@ footer {
   line-height: 1.5em;
   padding: 0 15px 10px 15px;
   left: 0px;
+  max-width: 85%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -562,6 +592,7 @@ footer {
   display: block;
   background-color: white;
   right: 30px;
+  bottom: 10px;
 }
 
 .mealChecked {
@@ -574,11 +605,6 @@ footer {
   height: 100%;
   border-radius: 0 15px 15px 0;
   overflow: hidden;
-}
-
-a:hover .mealChecked {
-  display: block;
-  animation: Checked 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

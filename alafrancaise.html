@@ -41,169 +41,141 @@
             sizes="100vm"/>
         </div>
 
-        <div class="menu menu--margin">
+        <section class="menu menu--margin">
             <div class="flex">
                 <h2 class="logoTitle logoTitle--menu">&#192; la française</h2>
-                <div class="icon__heart icon__heart--menuPosition">
-                    <a href="#"><i class="icon__heart--unlock fa-regular fa-heart fa-xl"></i></a>
-                    <a href="#"><i class="icon__heart--lock icon__heart--lockMenu fa-solid fa-heart fa-xl"></i></a>
-                </div>
+                <a href="#" class="icon__heart icon__heart--menuPosition">
+                    <i class="icon__heart--unlock fa-regular fa-heart fa-xl"></i>
+                    <img class="icon__heart--lock icon__heart--lockMenu" src="./icones/heart-solid-color-25px.png" alt="enregistrer dans les favoris"/>
+                </a>
             </div>
 
             <form method="post" action="alafrancaise.html" class="form" id="aLaFrancaise">
-                <fieldset>
-                    <legend class="menuLevel">ENTR&#201;ES</legend>
+                <fieldset class="menuLevel">
+                    <legend>ENTR&#201;ES</legend>
                     <div class="menuLevel__underline"></div>
                     
-                    <article class="appearance appearance--delay0 cardMenu nav__button nav__button--menu ">
-                        <div class="flex cardMenu__content">
-                            <input type="checkbox" name="entrée" id="tartare" />
-                            <label for="tartare" aria-describedby="aLaFrancaise">
-                                <h4 class="title__small meal">Tartare de poulpe acidulé</h4>   
-                                <div class="flex">
-                                    <p class="ingredient">Aux zests d'orange</p>
-                                    <p class="price translate">25€</p>
-                                </div>                                                          
-                            </label> 
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="entrée" id="tartare" />
+                        <label for="tartare" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Tartare de poulpe acidulé</h4>   
+                            <p class="ingredient">Aux zests d'orange</p>
+                        </label> 
+                        <p class="price translate">25€</p>
+                        <div class="mealChecked">                            
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
                         </div>
                     </article>
 
-                    <article class="appearance appearance--delay1 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Velouté de légumes d'antan</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Carotte, panais, topinambour</p>
-                                <p class="price translate">35€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="entrée" id="velouté" />
+                        <label for="velouté" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Velouté de légumes d'antan</h4>   
+                            <p class="ingredient">Carotte, panais, topinambour</p>                                                         
+                        </label> 
+                        <p class="price translate">35€</p>
+                        <div class="mealChecked">                            
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
 
-                    <article class="appearance appearance--delay2 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Soupe à l'oignon</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Revisitée</p>
-                                <p class="price translate">20€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="entrée" id="soupe" />
+                        <label for="soupe" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Soupe à l'oignon</h4>   
+                            <p class="ingredient">Revisitée</p>                                                         
+                        </label>
+                        <p class="price translate">20€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
-
                 </fieldset>
 
-                <section>
-                    <h3 class="menuLevel">PLATS</h3>
+                <fieldset class="menuLevel">
+                    <legend>PLATS</legend>                    
                     <div class="menuLevel__underline"></div>
-                    <article class="appearance appearance--delay0 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Coquilles Saint-Jacques</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Accompagnées d'une purée de panais</p>
-                                <p class="price translate">40€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="plats" id="coquilles" />
+                        <label for="coquilles" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Coquilles Saint-Jacques</h4>   
+                            <p class="ingredient">Accompagnées d'une purée de panais</p>                                                        
+                        </label> 
+                        <p class="price translate">40€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
 
-                    <article class="appearance appearance--delay1 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal meal">Magret de canard</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Et parmentier de pommes de terres</p>
-                                <p class="price translate">35€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="plats" id="magret" />
+                        <label for="magret" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Magret de canard</h4>   
+                            <p class="ingredient">Et parmentier de pommes de terres</p>                                                        
+                        </label> 
+                        <p class="price translate">35€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
 
-                    <article class="appearance appearance--delay2 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu cardMenu__content">                      
-                            <div class="flex">
-                                <h4 class="title__small meal">Pigeonneau d'Ille-et-Vilaine</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Sur son lit de gnocchis aux légumes</p>
-                                <p class="price translate">44€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="plats" id="pigeonneau" />
+                        <label for="pigeonneau" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Pigeonneau d'Ille-et-Vilaine</h4>   
+                            <p class="ingredient">Sur son lit de gnocchis aux légumes</p>                                                        
+                        </label> 
+                        <p class="price translate">44€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
-                </section>
+                </fieldset>
 
-                <section>
-                    <h3 class="menuLevel">DESSERTS</h3>
+                <fieldset class="menuLevel">
+                    <legend>DESSERTS</legend>
                     <div class="menuLevel__underline"></div>
-                    <article class="appearance appearance--delay0 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Pétales de violettes glacés</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Et purée de noisettes</p>
-                                <p class="price translate">18€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="desserts" id="violettes" />
+                        <label for="violettes" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Pétales de violettes glacés</h4>   
+                            <p class="ingredient">Et purée de noisettes</p>                                                         
+                        </label> 
+                        <p class="price translate">18€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
 
-                    <article class="appearance appearance--delay1 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Fondant au chocolat</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Revisité</p>
-                                <p class="price translate">22€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="desserts" id="fondant" />
+                        <label for="fondant" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Fondant au chocolat</h4>   
+                            <p class="ingredient">Revisité</p>                                                         
+                        </label> 
+                        <p class="price translate">22€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
 
-                    <article class="appearance appearance--delay2 cardMenu cardMenu--padding nav__button nav__button--menu">
-                        <a href="#" class="flex cardMenu__content">
-                            <div class="flex">
-                                <h4 class="title__small meal">Millefeuille croustillant</h4>
-                            </div>
-                            <div class="flex">
-                                <p class="ingredient">Myrtilles et pâte d'amande</p>
-                                <p class="price translate">23€</p>
-                            </div>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </a>
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu ">
+                        <input type="checkbox" name="desserts" id="millefeuille" />
+                        <label for="millefeuille" aria-describedby="aLaFrancaise">
+                            <h4 class="title__small meal">Millefeuille croustillant</h4>   
+                            <p class="ingredient">Myrtilles et pâte d'amande</p>                                                         
+                        </label> 
+                        <p class="price translate">23€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
                     </article>
-                </section>  
-                <a href="#" class="flex button button__menu">Commander</a>
+                </fieldset>  
+                <input type="submit" class="flex button button__menu" value="Commander"/>
             </form>   
-        </div>
+        </section>
     </main>
 
     <footer>

@@ -2,42 +2,25 @@
     &--active {
         color: $color-primary;
     }
-    &__heart {   
+    &__heart {
+        position: relative;
         &--unlock {
             position: relative;
         }
 
         &--lock {
+            position: absolute;
+            top: -10px;
             opacity: 0;      
-            color: $color-secondary;
-          
-
-            // transform-origin: ;
-
-            /* test 2 pour coeur dégradé */
-            // content: "";
-            // position: absolute;
-            // top: 0;
-            // right: 0;
-            // bottom: 0;
-            // left: 0;
-            // background-color: $color-heart-active;
-            // opacity: 0;
-            // z-index: -1;
-            // transition: opacity 250ms;
-
-            /* test 1 pour coeur avec couleur dégradé */
-            // background: linear-gradient(170deg, $color-secondary, $color-primary);
-            // -webkit-background-clip: text;
-            // -webkit-text-fill-color: transparent;
-            
+            width: 20px;        
             
             &Menu {
                 position: absolute;
-                top: 9px;
-                right: -3px;
+                top: -3px;
+                right: 0px;
                 bottom: 0;
                 left: 0px;
+                width: 24px;
             }
         }
 
@@ -94,4 +77,4 @@
 //         -webkit-text-fill-color: transparent;
 //         animation: progressHeart $time-appearance both;
 //     }
-//
+// }

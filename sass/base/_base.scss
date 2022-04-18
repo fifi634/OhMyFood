@@ -30,11 +30,12 @@ a:hover {
     }
 }
 
-.card:hover img {
-    filter: grayscale(1);
-    transition: 0.5s;
+.card:hover {
+    .card__image--frame > img {
+        filter: grayscale(1);
+        transition: 0.5s;
+    }
 }
-
 
 strong {
     color: inherit;

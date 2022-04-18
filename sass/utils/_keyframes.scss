@@ -57,3 +57,25 @@
         transform: rotate(360deg); 
     }
 }
+
+//Element slip
+@keyframes IngredientSlip {
+    0% {
+        width: 65%;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes MealSlip {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 80%;
+    }
+}

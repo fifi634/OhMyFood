@@ -42,15 +42,21 @@
     }
 }
 
-.cardMenu, .cardMenu label { 
+.cardMenu { 
     overflow: hidden;
     cursor: pointer;
-    &__content {
-        flex-direction: column;
-        position: relative;
-        
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  
         &:hover {
             color: inherit;
+            & .meal {
+                animation: MealSlip calc($time-appearance - .5s) forwards;
+            }
+            & .ingredient {
+                animation: IngredientSlip $time-appearance forwards;
+            }
             .translate {
                 animation: TranslateX $time-appearance forwards;
             }
@@ -59,5 +65,4 @@
                 animation: Checked calc($time-appearance/2);
             }
         }
-    }
 }

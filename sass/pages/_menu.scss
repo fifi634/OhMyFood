@@ -31,10 +31,10 @@
 
 .meal {
     padding: 10px 15px 0 15px;
-
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    max-width: 100%;
 }
 
 .ingredient {
@@ -42,7 +42,7 @@
     line-height: 1.5em;
     padding: 0 15px 10px 15px;
     left: 0px;
-
+    max-width: 85%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space:nowrap;
@@ -53,6 +53,7 @@
     display: block;
     background-color: $color-background-card;
     right: 30px;
+    bottom: 10px;
 }
 
 .mealChecked {
@@ -65,11 +66,4 @@
     height: 100%;
     border-radius: 0 15px 15px 0;
     overflow: hidden;
-}
-
-a:hover {
-    .mealChecked {
-        display: block;
-        animation: Checked calc($time-appearance/2);
-    }
 }
