@@ -79,3 +79,85 @@
         width: 80%;
     }
 }
+
+//Loader
+@keyframes loader {
+    0% {
+        transform: opacity(0);
+        transition: transform 0.3;
+        color: transparent;
+       
+        
+    }
+    25% {
+        transform: scaleX(0.4);
+    }
+    75% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-48vh) scale(0.3, 0.3);
+    }
+}
+
+@keyframes endLoader {
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes z-index {
+    0% {
+        z-index: 10;
+    }
+    100% {
+        z-index: -10;
+    }
+}
+
+@keyframes oh {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    25% {
+        color: $color-secondary;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes my {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    25% {
+        color: $color-tertiary;
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes food {
+    0% {
+        opacity: 0;
+        color: $color-primary;
+    }
+    15% {
+        opacity: 1;
+    }
+    25% {
+        color: $color-primary;
+    }
+    100% {
+        color: black;
+    }
+}

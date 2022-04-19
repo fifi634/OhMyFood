@@ -9,6 +9,9 @@
     z-index: 1;
     background-color: $color-background-section;
 
+    &--margin {
+        padding: 30px 5%;
+    }
     &__image--frame {
         height: 300px;
         width: 100%;
