@@ -3,14 +3,24 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+// Background Color
 $color-background-section: #f7f7f7;
 $color-background-card : white;
 $color-background-footer: #353535;
 $color-background-body: white; 
 
+//Item Color
 $color-button: linear-gradient(170deg, $color-secondary, $color-primary);
 $color-heart-active: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
-$color-hover: $color-secondary;
+$color-hover: $color-primary;
 
-// Typography color
+// Typography Color
 $color-typo-button: white;
+
+//Timing 
+$progress-heart-duration: 2500ms;
+$progress-heart-delay: 500ms;
+$time-appearance: 1s;
+
+//Font Awesome
+$font-icone : 'Font Awesome 6 Free';

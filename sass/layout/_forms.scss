@@ -1,23 +1,46 @@
-.form__position {
-    background-color: darken($color-background-section, 2);
-    width: auto;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0px 10px 10px -10px darken($color-background-section, 20) inset;
-
-    &--center {
-        position: relative;
-        margin: 0 0 0 80px ;
-    }
-    input[type="search"] {
-        -webkit-appearance: none;
+.form {
+    input {
+        appearance: none;
         border: none;
         background-color: inherit;
-    }
-    input {
+
         font-family: Roboto, sans-serif;
         font-size: 16px;
         font-weight: 500;
         @include typo--color($color-background-section);
     }
+
+
+    // input[type="checkbox"] {
+
+    //     &:hover + label  {
+    //         .translate {
+    //             animation: TranslateX $time-appearance forwards;
+    //         }
+    //         .mealChecked {
+    //             display:block;
+    //             animation: Checked calc($time-appearance/2);
+    //         }
+    //     }
+        
+    //     &:checked + label {
+    //         .translate {
+    //             animation: TranslateX $time-appearance forwards;
+    //         }
+   
+    //     }
+    // }
+
+    &__position {
+        background-color: darken($color-background-section, 2);
+        width: auto;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 10px 10px -10px darken($color-background-section, 20) inset;
+    
+        &--center {
+            position: relative;
+            margin: 0 0 0 80px ;
+        }
+    }  
 }

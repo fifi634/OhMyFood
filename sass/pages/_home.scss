@@ -23,6 +23,11 @@
     }
 }
 
-.section--background {
-    background-color: $color-background-section;
+.section {
+    &--margin {
+        padding: 60px 5%;
+    }
+    &--background {
+        background-color: $color-background-section;
+    }
 }

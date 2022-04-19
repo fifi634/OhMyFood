@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
 /* Reset CSS */
 @import "./Vendors/reset";
@@ -19,9 +20,6 @@
 /* Icon */
 @import "./components/icons";
 
-/* Container */
-@import "./layout/container";
-
 /* Header */
 @import "./layout/header";
 
@@ -33,6 +31,9 @@
 
 /* Footer */
 @import "./layout/footer";
+
+/* Loader */
+@import "./layout/loader";
 
 /* Home */
 @import "./pages/home.scss";

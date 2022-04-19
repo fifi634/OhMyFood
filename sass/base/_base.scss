@@ -4,6 +4,7 @@
 
 body {
     background-color: $color-background-body;
+    width: 100%;
 }
 
 .block {
@@ -30,8 +31,26 @@ a:hover {
     }
 }
 
+.card:hover {
+    .card__image--frame > img {
+        filter: grayscale(1);
+        transition: 0.5s;
+    }
+}
+
 strong {
     color: inherit;
     font-weight: inherit;
     
 }
+
+.appearance {
+    opacity: 0;
+
+    @for $i from 0 through 9 {
+        &--delay#{$i} {
+            animation: Appearance $time-appearance calc(200ms * $i) forwards;
+        }
+    }
+}
+

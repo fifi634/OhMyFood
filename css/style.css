@@ -1,3 +1,146 @@
+@charset "UTF-8";
+@keyframes progressHeart {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes Appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1);
+  }
+}
+@keyframes Checked {
+  0% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes TranslateX {
+  0% {
+    transform: translateX(0);
+    animation-delay: 10ms;
+  }
+  50% {
+    transform: translateX(-60px);
+    transition: translate 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.27, 1.55);
+  }
+  100% {
+    transform: translateX(-35px);
+    transition: translate 1s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0, 1);
+  }
+}
+@keyframes Rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes IngredientSlip {
+  0% {
+    width: 65%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes MealSlip {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: opacity(0);
+    transition: transform 0.3;
+    color: transparent;
+  }
+  25% {
+    transform: scaleX(0.4);
+  }
+  75% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-48vh) scale(0.3, 0.3);
+  }
+}
+@keyframes endLoader {
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes z-index {
+  0% {
+    z-index: 10;
+  }
+  100% {
+    z-index: -10;
+  }
+}
+@keyframes oh {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    color: #FF79DA;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes my {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    color: #99E2D0;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes food {
+  0% {
+    opacity: 0;
+    color: #9356DC;
+  }
+  15% {
+    opacity: 1;
+  }
+  25% {
+    color: #9356DC;
+  }
+  100% {
+    color: black;
+  }
+}
 /* Reset CSS */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,7 +197,7 @@ table {
 }
 
 /* Typography */
-body {
+body, .ingredient {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -114,6 +257,11 @@ strong {
   font-weight: 500;
 }
 
+.price {
+  font-weight: 600;
+  font-size: 16px;
+}
+
 /* Base */
 * {
   box-sizing: border-box;
@@ -121,6 +269,7 @@ strong {
 
 body {
   background-color: white;
+  width: 100%;
 }
 
 .block {
@@ -137,18 +286,57 @@ a {
 }
 
 a:hover {
-  color: #FF79DA;
+  color: #9356DC;
   transition: 0.3s;
   cursor: pointer;
 }
 a:hover h2, a:hover h3 {
-  color: #FF79DA;
+  color: #9356DC;
   transition: 0.3s;
+}
+
+.card:hover .card__image--frame > img {
+  filter: grayscale(1);
+  transition: 0.5s;
 }
 
 strong {
   color: inherit;
   font-weight: inherit;
+}
+
+.appearance {
+  opacity: 0;
+}
+.appearance--delay0 {
+  animation: Appearance 1s 0ms forwards;
+}
+.appearance--delay1 {
+  animation: Appearance 1s 200ms forwards;
+}
+.appearance--delay2 {
+  animation: Appearance 1s 400ms forwards;
+}
+.appearance--delay3 {
+  animation: Appearance 1s 600ms forwards;
+}
+.appearance--delay4 {
+  animation: Appearance 1s 800ms forwards;
+}
+.appearance--delay5 {
+  animation: Appearance 1s 1000ms forwards;
+}
+.appearance--delay6 {
+  animation: Appearance 1s 1200ms forwards;
+}
+.appearance--delay7 {
+  animation: Appearance 1s 1400ms forwards;
+}
+.appearance--delay8 {
+  animation: Appearance 1s 1600ms forwards;
+}
+.appearance--delay9 {
+  animation: Appearance 1s 1800ms forwards;
 }
 
 /* Button */
@@ -157,10 +345,14 @@ strong {
   border-radius: 30px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   color: white !important;
+  /*!important because automatic color with mixin/typo--color*/
   border: none;
+  box-shadow: 0px 1px 10px #d1d1d1;
 }
 .button:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
+  box-shadow: 0px 1px 20px #919191;
+  transition: 0.3s;
 }
 .button__menu {
   width: 150px;
@@ -217,69 +409,81 @@ strong {
 }
 
 .cardMenu {
+  overflow: hidden;
+  cursor: pointer;
   flex-direction: column;
   position: relative;
-}
-.cardMenu--padding {
-  padding: 0;
+  width: 100%;
 }
 .cardMenu:hover {
   color: inherit;
 }
-.cardMenu:hover .cardMenu__item {
-  transform: translateX(-60px);
+.cardMenu:hover .meal {
+  animation: MealSlip 0.5s forwards;
+}
+.cardMenu:hover .ingredient {
+  animation: IngredientSlip 1s forwards;
+}
+.cardMenu:hover .translate {
+  animation: TranslateX 1s forwards;
+}
+.cardMenu:hover .mealChecked {
+  display: block;
+  animation: Checked 0.5s;
 }
 
 /* Icon */
 .icon--active {
   color: #9356DC;
 }
-.icon__heart--lock {
-  display: none;
+.icon__heart {
+  position: relative;
 }
 .icon__heart--unlock {
-  display: block;
+  position: relative;
 }
-.icon__heart:hover .icon__heart--unlock {
-  display: none;
+.icon__heart--lock {
+  position: absolute;
+  top: -10px;
+  opacity: 0;
+  width: 20px;
+}
+.icon__heart--lockMenu {
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  width: 24px;
 }
 .icon__heart:hover .icon__heart--lock {
-  display: block;
+  opacity: 1;
+  animation: progressHeart 1s both;
 }
 .icon__heart--homePosition {
   position: absolute;
   right: 0px;
   margin: -5px 30px;
-  z-index: 1;
 }
 .icon__heart--menuPosition {
   position: absolute;
-  right: 60px;
-  top: 55px;
+  right: 0px;
+  top: 40px;
+  margin: 0px 10% 0 0;
 }
 .icon__mealChecked {
   position: relative;
+  align-items: center;
+  justify-content: center;
   top: 50%;
-  left: 32%;
+  animation: Rotate 0.5s forwards;
 }
 .icon__footer {
   margin: 0 10px 0 0;
   align-self: center;
 }
 
-/* Container */
-body {
-  width: 100%;
-}
-
-.section--margin {
-  padding: 60px 5%;
-}
-
-.menu--margin {
-  padding: 30px 5%;
-}
-
+/* test 3 pour coeur avec couleur dégradé */
 /* Header */
 .header__logoPositionHome {
   text-align: center;
@@ -331,6 +535,15 @@ body {
 }
 
 /* Form */
+.form input {
+  appearance: none;
+  border: none;
+  background-color: inherit;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
 .form__position {
   background-color: #f2f2f2;
   width: auto;
@@ -341,17 +554,6 @@ body {
 .form__position--center {
   position: relative;
   margin: 0 0 0 80px;
-}
-.form__position input[type=search] {
-  -webkit-appearance: none;
-  border: none;
-  background-color: inherit;
-}
-.form__position input {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
 }
 
 /* Footer */
@@ -367,6 +569,32 @@ footer {
 
 .footer__typo li {
   margin: 0 0 8px 0;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  animation: endLoader 1s 2.5s forwards, z-index 1s 3s forwards;
+}
+.loader--logo {
+  font-size: 5rem;
+  animation: loader 3s both;
+}
+.loader--oh {
+  animation: oh 3s both;
+}
+.loader--my {
+  animation: my 3s both;
+}
+.loader--food {
+  animation: food 3s both;
 }
 
 /* Home */
@@ -393,6 +621,9 @@ footer {
   color: #7b7b7b;
 }
 
+.section--margin {
+  padding: 60px 5%;
+}
 .section--background {
   background-color: #f7f7f7;
 }
@@ -409,6 +640,9 @@ footer {
   z-index: 1;
   background-color: #f7f7f7;
 }
+.menu--margin {
+  padding: 30px 5%;
+}
 .menu__image--frame {
   height: 300px;
   width: 100%;
@@ -422,24 +656,36 @@ footer {
 .menuLevel {
   margin: 40px 0 5px 0;
 }
-.menuLevel__border {
+.menuLevel__underline {
   width: 40px;
   border-bottom: solid 3px #99E2D0;
 }
 
 .meal {
   padding: 10px 15px 0 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .ingredient {
+  position: relative;
   line-height: 1.5em;
   padding: 0 15px 10px 15px;
+  left: 0px;
+  max-width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .price {
   position: absolute;
+  display: block;
+  background-color: white;
   right: 30px;
-  font-weight: 600;
+  bottom: 10px;
 }
 
 .mealChecked {
@@ -451,10 +697,7 @@ footer {
   width: 60px;
   height: 100%;
   border-radius: 0 15px 15px 0;
-}
-
-a:hover .mealChecked {
-  display: block;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

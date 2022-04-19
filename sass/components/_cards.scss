@@ -42,18 +42,27 @@
     }
 }
 
-.cardMenu {
+.cardMenu { 
+    overflow: hidden;
+    cursor: pointer;
     flex-direction: column;
     position: relative;
-
-    &--padding {
-        padding: 0;
-    }
-
-    &:hover {
-        color: inherit;
-        .cardMenu__item {
-            transform: translateX(-60px);
+    width: 100%;
+  
+        &:hover {
+            color: inherit;
+            & .meal {
+                animation: MealSlip calc($time-appearance - .5s) forwards;
+            }
+            & .ingredient {
+                animation: IngredientSlip $time-appearance forwards;
+            }
+            .translate {
+                animation: TranslateX $time-appearance forwards;
+            }
+            .mealChecked {
+                display: block;
+                animation: Checked calc($time-appearance/2);
+            }
         }
-    }
 }

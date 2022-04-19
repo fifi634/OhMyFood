@@ -9,6 +9,9 @@
     z-index: 1;
     background-color: $color-background-section;
 
+    &--margin {
+        padding: 30px 5%;
+    }
     &__image--frame {
         height: 300px;
         width: 100%;
@@ -23,7 +26,7 @@
 .menuLevel {
     margin: 40px 0 5px 0;
 
-    &__border {
+    &__underline{
         width: 40px;
         border-bottom: solid 3px $color-tertiary;
     }
@@ -31,20 +34,30 @@
 
 .meal {
     padding: 10px 15px 0 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
 }
 
 .ingredient {
+    position: relative;
     line-height: 1.5em;
     padding: 0 15px 10px 15px;
+    left: 0px;
+    max-width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
 }
 
 .price {
     position: absolute;
+    display: block;
+    background-color: $color-background-card;
     right: 30px;
-    font-weight: 600;
+    bottom: 10px;
 }
-
-
 
 .mealChecked {
     display: none;
@@ -55,11 +68,5 @@
     width: 60px;
     height: 100%;
     border-radius: 0 15px 15px 0;
+    overflow: hidden;
 }
-
-a:hover {
-    .mealChecked {
-        display: block;
-    }
-}
-
