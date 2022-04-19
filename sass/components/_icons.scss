@@ -6,13 +6,15 @@
         position: relative;
         &--unlock {
             position: relative;
-        }
-
+        }         
         &--lock {
             position: absolute;
             top: -10px;
             opacity: 0;      
-            width: 20px;        
+            width: 24px; 
+            height: 24px; 
+            background: $color-heart-active;
+            clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");  
             
             &Menu {
                 position: absolute;
@@ -23,7 +25,6 @@
                 width: 24px;
             }
         }
-
         &:hover { 
             .icon__heart--lock {
                 opacity: 1;
@@ -54,27 +55,3 @@
         align-self: center;
     }
 }
-
-
-
-
-/* test 3 pour coeur avec couleur dégradé */
-// .heart {
-//     &::after {
-//         font-family: $font-icone;
-//         content: '\f004';
-//         font-size: 1.5em;
-//         -webkit-text-stroke: 1px black;
-//         -webkit-text-stroke-color: black;
-//         background-color: white;
-//         background-image: $color-heart-active;
-//         -webkit-background-clip: text;
-//                 background-clip: text;
-//         -webkit-text-fill-color: $color-background-card;        
-//     }
-//     &:hover::after {
-//         -webkit-text-stroke: 0px;
-//         -webkit-text-fill-color: transparent;
-//         animation: progressHeart $time-appearance both;
-//     }
-// }
