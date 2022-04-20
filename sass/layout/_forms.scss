@@ -11,27 +11,34 @@
     }
 
     //TEST check dans label
-    // input[type="checkbox"] {
+    input[type="checkbox"] {
+        // TEST checked dans label
+        position: absolute;
+        right: 1vw;
+        top: -2vh;
+        width: 9vw;
+        height: 9vh;
+        // z-index: 2;
+        // cursor: pointer;
 
-    //     &:hover + label  {
-    //         .translate {
-    //             animation: TranslateX $time-appearance forwards;
+        &:hover + label  {
+            .translate {
+                animation: TranslateX $time-appearance forwards;
               
-    //         }
-    //         .mealChecked {
-    //             display:block;
-    //             animation: Checked calc($time-appearance/2);
-    //         }
-    //     }
+            }
+            .mealChecked {
+                display:block;
+                animation: Checked calc($time-appearance/2);
+            }
+        }
         
-    //     &:checked + label {
-    //         .translate {
-    //             animation: TranslateX $time-appearance forwards;
-    //             background: $color-secondary;
-    //         }
-   
-    //     }
-    // }
+        &:checked + label {
+            .translate {
+                animation: TranslateX $time-appearance forwards;
+                background: $color-secondary;
+            }
+        }
+    }
 
     &__position {
         background-color: darken($color-background-section, 2);
@@ -43,6 +50,14 @@
         &--center {
             position: relative;
             margin: 0 0 0 80px ;
+
+            @include miniMobile330 {
+                margin: 0;
+               }
         }
     }  
+}
+
+label {
+    cursor: pointer;
 }

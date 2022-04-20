@@ -28,3 +28,40 @@
     left: 2.1px;
     width: 110%;
 }
+
+//Media Query
+@mixin desktop {
+    @media all and (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media all and (min-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media all and (min-width: map-get($breakpoints, mini-mobile-500)) and (max-width: map-get($breakpoints, mobile)) {
+        @content
+    }
+}
+
+@mixin miniMobile500 {
+    @media all and (max-width: map-get($breakpoints, mini-mobile-500)) {
+        @content;
+    }
+}
+
+@mixin miniMobile400 {
+    @media all and (max-width: map-get($breakpoints, mini-mobile-400)) {
+        @content;
+    }
+}
+
+@mixin miniMobile330 {
+    @media all and (max-width: map-get($breakpoints, mini-mobile-330)) {
+        @content;
+    }
+}

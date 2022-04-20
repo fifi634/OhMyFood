@@ -119,11 +119,12 @@
 @keyframes oh {
     0% {
         opacity: 0;
+        color: $color-secondary;
     }
     15% {
         opacity: 1;
     }
-    25% {
+    40% {
         color: $color-secondary;
     }
     100% {
@@ -134,11 +135,12 @@
 @keyframes my {
     0% {
         opacity: 0;
+        color: $color-tertiary;
     }
     15% {
         opacity: 1;
     }
-    25% {
+    35% {
         color: $color-tertiary;
     }
     100% {
@@ -154,7 +156,7 @@
     15% {
         opacity: 1;
     }
-    25% {
+    40% {
         color: $color-primary;
     }
     100% {

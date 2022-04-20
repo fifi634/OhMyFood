@@ -1,6 +1,7 @@
 .loader {
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: $color-background-card;
@@ -12,6 +13,15 @@
     &--logo {
         font-size: 5rem;
         animation: loader 3s both;
+        @include miniMobile400 {
+            font-size: 3rem;
+        }
+        @include miniMobile500 {
+            font-size: 4rem;
+        }
+        @include miniMobile330 {
+            font-size: 3rem;
+        }
     }
     &--oh {
         animation: oh 3s both;

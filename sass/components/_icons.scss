@@ -2,6 +2,14 @@
     &--active {
         color: $color-primary;
     }
+    &__location {
+        color: black;
+        margin: 0 5px 0 -10px;
+        text-align: center;
+        @include miniMobile330 {
+            text-align:left;
+        }
+    }
     &__heart {
         position: relative;
         &--unlock {
@@ -18,7 +26,7 @@
             
             &Menu {
                 position: absolute;
-                top: -3px;
+                top: -1px;
                 right: 0px;
                 bottom: 0;
                 left: 0px;
@@ -35,6 +43,10 @@
             position: absolute;
             right: 0px;
             margin: -5px 30px;
+
+            @include miniMobile500 {
+                margin: -5px 5px;
+            }
         }
         &--menuPosition {
             position: absolute;
