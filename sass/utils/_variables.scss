@@ -24,3 +24,12 @@ $time-appearance: 1s;
 
 //Font Awesome
 $font-icone : 'Font Awesome 6 Free';
+
+//Breakpoint (maximal size)
+$breakpoints : (
+    mini-mobile-330: 330px,
+    mini-mobile-400: 400px,
+    mini-mobile-500: 500px,
+    mobile: 630px,
+    tablet: 1000px,
+);

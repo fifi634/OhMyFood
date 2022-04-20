@@ -1,4 +1,4 @@
-.nav {
+.nav {    
     &__button {
         margin: 20px;
         padding: 20px;
@@ -11,7 +11,7 @@
         }
         &--menu {
             position: relative;
-            margin: 20px 0;
+            margin: 20px auto;
             padding: 0;
             background-color: $color-background-card;
         }

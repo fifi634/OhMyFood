@@ -5,6 +5,12 @@
 body {
     background-color: $color-background-body;
     width: 100%;
+    @include desktop {
+        margin: auto;
+        max-width: 1480px;
+        border-left: 1px solid $color-background-section;
+        border-right: 1px solid $color-background-section;
+    }
 }
 
 .block {
@@ -33,7 +39,7 @@ a:hover {
 
 .card:hover {
     .card__image--frame > img {
-        filter: grayscale(1);
+        filter: contrast(200%);
         transition: 0.5s;
     }
 }
@@ -54,3 +60,61 @@ strong {
     }
 }
 
+.responsive {
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }    
+    &--title {
+        @include tablet {
+            text-align: center;
+        }
+    }
+    &--nav {
+        @include tablet {
+            margin-left: 20px;
+        }
+    }
+    &--column {
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+    &--row {
+        @include desktop {
+            flex-direction:row;
+        }
+    }
+    &--footer {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+    &--menu {
+        @include desktop {
+            justify-content: space-around;
+            fieldset {
+                margin-left: 30px;
+            }
+        }
+        @include miniMobile500 {
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+        }
+        @include mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+    }
+
+}
