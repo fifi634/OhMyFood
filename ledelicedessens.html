@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !">
+    <title>Ohmyfood! &#192; la française</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Fontawesome icon CDN -->
+    <script src="https://kit.fontawesome.com/aa01e1fd65.js" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex">
+            <a href="index.html" class="toMenu"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+            <a href="index.html" class="header__logoPositionMenu">
+                <h1 class="logoTitle logoTitle--header">ohmyfood</h1>
+            </a>
+    </header>
+
+    <main class="backgroundMenu">
+        <div class="menu__image--frame">
+            <img class="card__heart card__image--adapt" src="images/restaurants/louis-hansel-1680.jpg"
+            alt="Restaurant Le Delice des Sens"
+            srcset="images/restaurants/louis-hansel-1280.jpg 1280w,
+                    images/restaurants/louis-hansel-720.jpg 720w,
+                    images/restaurants/louis-hansel-540.jpg 540w"
+            sizes="100vm"/>
+        </div>
+
+        <section class="menu menu--margin">
+            <div class="flex">
+                <h2 class="logoTitle logoTitle--menu">Le délice des sens</h2>
+                <a href="#" class="icon__heart icon__heart--menuPosition">
+                    <i class="icon__heart--unlock fa-regular fa-heart fa-xl"></i>
+                    <img class="icon__heart--lock icon__heart--lockMenu" src="./images/icones/heart-solid-color-25px.png" alt="enregistrer dans les favoris"/>
+                </a>
+            </div>
+
+            <form class="form" method="post" action="ledelicedessens.html" id="ledelicedessens">
+                <div class="responsive responsive--menu">
+                    <fieldset class="menuLevel">
+                        <legend>ENTR&#201;ES</legend>
+                        <div class="menuLevel__underline"></div>
+                        
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="tartareThon-delice" />
+                            <label for="tartareThon-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Tartare de thon</h4>   
+                                <p class="ingredient">Assaisonné au yuzu</p>
+    
+                            </label> 
+                            <p class="price translate">25€</p>
+                            <div class="mealChecked">                            
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="homard-delice" />
+                            <label for="homard-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Bouchée de homard croustillant </h4>   
+                                <p class="ingredient">Et sa farandole de petits légumes</p>                                                         
+                            </label> 
+                            <p class="price translate">35€</p>
+                            <div class="mealChecked">                            
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-xl"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="veloute-delice" />
+                            <label for="veloute-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Velouté de cèpes</h4>   
+                                <p class="ingredient">Aux truffes</p>                                                         
+                            </label>
+                            <p class="price translate">20€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+                    </fieldset>
+    
+                    <fieldset class="menuLevel">
+                        <legend>PLATS</legend>                    
+                        <div class="menuLevel__underline"></div>
+    
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="poulet-delice" />
+                            <label for="poulet-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Poulet rôti aux herbes de Provence</h4>   
+                                <p class="ingredient">Et sa crème de truffe</p>                                                        
+                            </label> 
+                            <p class="price translate">40€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="langouste-delice" />
+                            <label for="langouste-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Langouste rôtie</h4>   
+                                <p class="ingredient">Et ses légumes de saison</p>                                                        
+                            </label> 
+                            <p class="price translate">35€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="coteBoeuf-delice" />
+                            <label for="coteBoeuf-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Côte de boeuf Angus</h4>   
+                                <p class="ingredient">Et sa purée de panais</p>                                                        
+                            </label> 
+                            <p class="price translate">44€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+                    </fieldset>
+    
+                    <fieldset class="menuLevel">
+                        <legend>DESSERTS</legend>
+                        <div class="menuLevel__underline"></div>
+    
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="farandole-delice" />
+                            <label for="farandole-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Farandole de desserts</h4>   
+                                <p class="ingredient">Du chef</p>                                                         
+                            </label> 
+                            <p class="price translate">18€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="cremeBrule-delice" />
+                            <label for="cremeBrule-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Crème brulée</h4>   
+                                <p class="ingredient">Revisitée</p>                                                         
+                            </label> 
+                            <p class="price translate">22€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="tiramisu-delice" />
+                            <label for="tiramisu-delice" aria-describedby="ledelicedessens">
+                                <h4 class="title__small meal">Tiramisu</h4>   
+                                <p class="ingredient">À la noisette</p>                                                         
+                            </label> 
+                            <p class="price translate">23€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+                    </fieldset>  
+                </div>
+               
+                <input type="submit" class="flex button button__menu" value="Commander"/>
+            </form>   
+        </section>
+    </main>
+
+    <footer class="responsive--footer">
+        <a href="index.html">
+            <h2 class="logoTitle logoTitle--footer">ohmyfood</h1>
+        </a>        
+        <ul class="footer__typo">
+            <a href="#">
+                <li class="flex">
+                    <i class="icon__footer fa-solid fa-utensils fa-sm"></i>
+                    Proposer un restaurant
+                </li>
+            </a>
+
+            <a href="#">
+                <li class="flex">
+                    <i class="icon__footer fa-solid fa-handshake-angle fa-2xs"></i>
+                    Devenir partenaire
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                    Mentions légales
+                </li>
+            </a>
+
+            <a href="#">
+                <li>
+                   Contact
+                </li>
+            </a>
+        </ul>
+    </footer>
+</body>
+</html
