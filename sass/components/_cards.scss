@@ -7,7 +7,6 @@
     margin: 20px 0 ;
     box-shadow: 5px 5px 10px #e3e3e3;
     flex: 1 1 auto;
-    
     @include desktop {
         max-width: 440px;
         margin: 20px;
@@ -32,9 +31,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -60%);
-
         @include miniMobile500 {
             width: 150%;
+        }
+        @include miniMobile400 {
+            width: 200%;
         }
     }
     &__detail {  
@@ -62,11 +63,13 @@
     flex-direction: column;
     position: relative;
     margin: 20px auto;
-    
     background-color: $color-background-card;
     width: 450px;
     @include miniMobile500 {
         width: 100%;
+    }
+    @include miniMobile400 {
+        width: 90vw;
     }
     padding: 0;
     &:hover {

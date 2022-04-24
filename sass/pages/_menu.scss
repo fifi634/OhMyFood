@@ -21,6 +21,10 @@
 
 .logoTitle--menu {        //.logoTitle in _typography.scss for font-style
     padding: 0;
+    width: 85%;
+    @include tablet {
+        margin: auto;
+    }
 }
 
 .menuLevel {

@@ -12,6 +12,9 @@
         }
         &--center {
             margin: 0 0 0 80px;
+            @include miniMobile330 {
+                margin: 0;
+            }
         }
     }
     &__heart {
@@ -36,7 +39,7 @@
                 right: 0px;
             }
         }
-        &:hover { 
+        &:hover {
             .icon__heart--lock {
                 opacity: 1;
                 animation: progressHeart $time-appearance forwards;  
@@ -45,7 +48,7 @@
         &--homePosition {
             position: absolute;
             top: -10px;
-            right: 0px;
+            right: -10px;
             margin: -5px 30px;
             @include miniMobile500 {
                 margin: -5px 5px;

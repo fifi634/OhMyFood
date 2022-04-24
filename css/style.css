@@ -354,7 +354,9 @@ strong {
 }
 @media all and (min-width: 767px) {
   .responsive {
+    display: flex;
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -385,6 +387,7 @@ strong {
 @media all and (min-width: 1000px) {
   .responsive--menu {
     justify-content: space-around;
+    gap: 0 60px;
   }
   .responsive--menu fieldset {
     margin-left: 30px;
@@ -478,6 +481,11 @@ strong {
     width: 150%;
   }
 }
+@media all and (max-width: 400px) {
+  .card__image--adapt {
+    width: 200%;
+  }
+}
 .card__detail {
   line-height: 25px;
   padding: 15px 20px 15px 20px;
@@ -509,6 +517,11 @@ strong {
 @media all and (max-width: 500px) {
   .cardMenu {
     width: 100%;
+  }
+}
+@media all and (max-width: 400px) {
+  .cardMenu {
+    width: 90vw;
   }
 }
 .cardMenu:hover {
@@ -545,6 +558,11 @@ strong {
 .icon__location--center {
   margin: 0 0 0 80px;
 }
+@media all and (max-width: 330px) {
+  .icon__location--center {
+    margin: 0;
+  }
+}
 .icon__heart {
   position: relative;
 }
@@ -574,7 +592,7 @@ strong {
 .icon__heart--homePosition {
   position: absolute;
   top: -10px;
-  right: 0px;
+  right: -10px;
   margin: -5px 30px;
 }
 @media all and (max-width: 500px) {
@@ -630,13 +648,12 @@ strong {
   margin: 20px;
   padding: 20px;
   background-color: #f7f7f7;
-  width: 100%;
   border-radius: 15px;
   box-shadow: 0px 1px 10px #d1d1d1;
 }
 @media all and (min-width: 767px) {
   .nav__button {
-    width: 400px;
+    width: 450px;
   }
 }
 .nav__button--active {
@@ -787,6 +804,10 @@ footer {
   background-color: #f7f7f7;
 }
 
+nav li {
+  width: 100%;
+}
+
 /* Menu */
 .backgroundMenu {
   background-color: #f7f7f7;
@@ -810,6 +831,12 @@ footer {
 
 .logoTitle--menu {
   padding: 0;
+  width: 85%;
+}
+@media all and (min-width: 767px) {
+  .logoTitle--menu {
+    margin: auto;
+  }
 }
 
 .menuLevel {

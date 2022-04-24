@@ -65,7 +65,9 @@ strong {
     flex-direction: column;
 
     @include tablet {
+        display: flex;
         justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
     }    
     &--title {
@@ -95,6 +97,7 @@ strong {
     &--menu {
         @include desktop {
             justify-content: space-around;
+            gap: 0 60px;
             fieldset {
                 margin-left: 30px;
             }
