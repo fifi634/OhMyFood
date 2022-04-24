@@ -29,6 +29,7 @@
     &__underline{
         width: 40px;
         border-bottom: solid 3px $color-tertiary;
+        margin: 5px 0 0 0;
     }
 }
 
@@ -57,9 +58,6 @@
     background-color: $color-background-card;
     right: 30px;
     bottom: 10px;
-
-    //Test checked dans label
-    // z-index: 1;
 }
 
 .mealChecked {
@@ -72,9 +70,6 @@
     height: 100%;
     border-radius: 0 15px 15px 0;
     overflow: hidden;
-
-    //TEST intégré au label
-    // top: 0;
 }
 
 .positionMenu {

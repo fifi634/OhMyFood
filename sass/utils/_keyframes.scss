@@ -1,4 +1,4 @@
-//Filling of hearts appearance
+//Filling of hearts
 @keyframes progressHeart {
     0% {
         transform: scale(0);        
@@ -12,11 +12,11 @@
 @keyframes Appearance {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
-        transform: translateY(1);
+        transform: translateY(0px);
     }
 }
 
@@ -38,12 +38,12 @@
     }
     50% {
         transform: translateX(-60px);
-        transition: translate $time-appearance;  
+        transition: transform $time-appearance;  
         animation-timing-function: cubic-bezier(0, 0.5, 0.27, 1.55);
     }
     100% {
         transform: translateX(-35px);
-        transition: translate $time-appearance;
+        transition: transform $time-appearance;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0, 1);
     }
 }
@@ -83,11 +83,9 @@
 //Loader
 @keyframes loader {
     0% {
-        transform: opacity(0);
-        transition: transform 0.3;
-        color: transparent;
-       
-        
+        opacity: 0;
+        transition: transform 0.3s;
+        color: transparent;        
     }
     25% {
         transform: scaleX(0.4);

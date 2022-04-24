@@ -6,44 +6,47 @@
         color: black;
         margin: 0 5px 0 -10px;
         text-align: center;
+
         @include miniMobile330 {
             text-align:left;
+        }
+        &--center {
+            margin: 0 0 0 80px;
         }
     }
     &__heart {
         position: relative;
         &--unlock {
             position: relative;
+            font-size: 24px;
         }         
         &--lock {
             position: absolute;
             top: -10px;
-            opacity: 0;      
-            width: 24px; 
-            height: 24px; 
+            opacity: 0;
             background: $color-heart-active;
-            clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");  
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24px;
             
             &Menu {
                 position: absolute;
-                top: -1px;
+                top: 0px;
                 right: 0px;
-                bottom: 0;
-                left: 0px;
-                width: 24px;
             }
         }
         &:hover { 
             .icon__heart--lock {
                 opacity: 1;
-                animation: progressHeart $time-appearance both;  
+                animation: progressHeart $time-appearance forwards;  
             }
         }
         &--homePosition {
             position: absolute;
+            top: -10px;
             right: 0px;
             margin: -5px 30px;
-
             @include miniMobile500 {
                 margin: -5px 5px;
             }
@@ -55,7 +58,7 @@
             margin: 0px 10% 0 0 ;
         }
     }
-    &__mealChecked {
+    &__mealChecked {            //info : this a subcategorie, .mealChecked is in _menu.scss
         position: relative;
         align-items: center;
         justify-content: center;

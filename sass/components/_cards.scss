@@ -4,16 +4,17 @@
     max-width: 570px;
     border-radius: 20px;
     background-color: $color-background-card;
-    margin: 20px 20px 20px 0;
+    margin: 20px 0 ;
     box-shadow: 5px 5px 10px #e3e3e3;
     flex: 1 1 auto;
+    
     @include desktop {
         max-width: 440px;
+        margin: 20px;
     }
     @include miniMobile400 {
         max-height: 200px;
     }
-
     &__image--frame {
         height: 220px;
         width: 100%;

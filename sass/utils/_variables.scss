@@ -5,13 +5,14 @@ $color-tertiary: #99E2D0;
 
 // Background Color
 $color-background-section: #f7f7f7;
+$color-background-positionEdit: #eaeaea;
 $color-background-card : white;
 $color-background-footer: #353535;
 $color-background-body: white; 
 
 //Item Color
 $color-button: linear-gradient(170deg, $color-secondary, $color-primary);
-$color-heart-active: radial-gradient(circle at bottom left, #FF79DA 0%,#9356DC 70%);
+$color-heart-active: radial-gradient(circle at bottom left, $color-secondary 20%, $color-primary 80%);
 $color-hover: $color-primary;
 
 // Typography Color
@@ -30,6 +31,6 @@ $breakpoints : (
     mini-mobile-330: 330px,
     mini-mobile-400: 400px,
     mini-mobile-500: 500px,
-    mobile: 630px,
+    mobile: 767px,
     tablet: 1000px,
 );

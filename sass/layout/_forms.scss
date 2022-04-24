@@ -9,51 +9,23 @@
         font-weight: 500;
         @include typo--color($color-background-section);
     }
-
-    //TEST check dans label
-    input[type="checkbox"] {
-        // TEST checked dans label
-        position: absolute;
-        right: 1vw;
-        top: -2vh;
-        width: 9vw;
-        height: 9vh;
-        // z-index: 2;
-        // cursor: pointer;
-
-        &:hover + label  {
-            .translate {
-                animation: TranslateX $time-appearance forwards;
-              
-            }
-            .mealChecked {
-                display:block;
-                animation: Checked calc($time-appearance/2);
-            }
-        }
-        
-        &:checked + label {
-            .translate {
-                animation: TranslateX $time-appearance forwards;
-                background: $color-secondary;
-            }
-        }
-    }
-
     &__position {
         background-color: darken($color-background-section, 2);
         width: auto;
-        padding: 15px;
         text-align: center;
-        box-shadow: 0px 10px 10px -10px darken($color-background-section, 20) inset;
-    
-        &--center {
+            
+        &__edit {
             position: relative;
-            margin: 0 0 0 80px ;
+            background: $color-background-positionEdit;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            box-shadow: 0px 10px 10px -10px darken($color-background-positionEdit, 20) inset;
 
             @include miniMobile330 {
                 margin: 0;
-               }
+            }
         }
     }  
 }

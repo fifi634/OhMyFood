@@ -26,182 +26,183 @@
         <h1 class="logoTitle loader--logo"><span class="loader--oh">oh</span><span class="loader--my">my</span><span class="loader--food">food</span></h1>
     </div>
     <header>
-            <a href="index.html" class="header__logoPositionHome">
-                <h1 class="logoTitle logoTitle--header">ohmyfood</h1>
-            </a>
+        <a href="index.html" class="header__logoPositionHome">
+            <h1 class="logoTitle logoTitle--header">ohmyfood</h1>
+        </a>
     </header>
 
     <main>
-        <section class="location">
+        <div class="location">
             <form class="form form__position" method="post" action="#">
-                <div class="form__position--center">
-                    <i class="icon__location fa-solid fa-location-dot"></i>
+                <div class="form__position__edit">
+                    <i class="icon__location icon__location--center fa-solid fa-location-dot"></i>
                     <input type="search" value="Paris, Belleville" placeholder="entrer votre ville"/>
                 </div>
 
                 <article class="description">
-                    <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h1>
+                    <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h2>
                     <p class="description--descriMargin description--typo">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                     <input type="submit" class="button" value="Explorer nos restaurants">
                 </article>
             </form>
-        </section>
+        </div>
 
-        <nav class="section--margin responsive--title">
+        
+        <nav class="flex nav section--margin responsive--title">
             <h2 class="title__general">Fonctionnement</h2>
-            <ol class="desktopNav responsive responsive--nav">
-                <a href="#">
-                    <li class="flex nav__button">
+
+            <ol class="flex desktopNav responsive responsive--nav">
+                <li class="flex nav__button">
+                    <a href="#" class="flex">
                         <div class="flex puce">1</div>
                         <i class="nav__icon fa-solid fa-mobile-screen-button"></i>
                         <h3 class="title__nav">Choisissez un restaurant</h3>
-                    </li>
-                </a>
+                    </a>
+                </li>
 
-                <a href="#">
-                    <li class="flex nav__button">
+                <li class="flex nav__button">
+                    <a href="#" class="flex">
                         <div class="flex puce">2</div>
                         <i class="nav__icon fa-solid fa-list"></i>
                         <h3 class="title__nav">Composez votre menu</h3>
-                    </li>
-                </a>
+                    </a>
+                </li>
 
-                <a href="#">
-                    <li class="flex nav__button nav__button--active">
+                <li class="flex nav__button nav__button--active">
+                    <a href="#" class="flex">
                         <div class="flex puce">3</div>
                         <i class="nav__icon icon--active fa-solid fa-store"></i>
                         <h3 class="title__nav">Dégustez au restaurant</h3>
-                    </li>
-                </a>
-            </ol>    
+                    </a>
+                </li>
+            </ol>
         </nav>
 
 
         <section class="section--margin section--background">
-            <h2 class="title__general responsive--title">Restaurants</h2>            
-            <div class="responsive responsive--column responsive--row">
-                
-                <a href="lapalettedugout.html">
-                    <article class="card">
+            <h2 class="title__general responsive--title">Restaurants</h2>
+            <div class="flex responsive responsive--column responsive--rowDesktop">
+                 
+                <article class="card">
+                    <a href="lapalettedugout.html">
                         <div class="card__image--frame">
                             <img class="card__image--adapt" src="images/restaurants/jay-wennington-1680.jpg"
                             alt="Restaurant La Palette du Goût"
                             srcset="images/restaurants/jay-wennington-1280.jpg 1280w,
                                     images/restaurants/jay-wennington-720.jpg 720w,
                                     images/restaurants/jay-wennington-540.jpg 540w"
-                            sizes="100vm"/>
+                            sizes="100vw"/>
                             <p class="card__new"><strong>Nouveau</strong></p>
                         </div>
                         <div class="card__detail">
                             <h3 class="title__small">La palette du goût</h3>                    
                             <div class="icon__heart">
-                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart fa-xl"></i>
-                                <i class="icon__heart--lock icon__heart--homePosition"></i>
+                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart"></i>
+                                <i class="icon__heart--lock icon__heart--homePosition fa-solid fa-heart"></i>
                             </div>
                             <p>Ménilmontant</p>
                         </div>
-                    </article>
-                </a>
-    
-                <a href="lanoteenchentee.html">
-                    <article class="card">
+                    </a>
+                </article>
+            
+                <article class="card">
+                    <a href="lanoteenchentee.html">
                         <div class="card__image--frame">
                             <img class="card__image--adapt" src="images/restaurants/stil-1680.jpg"
                             alt="Restaurant La Palette du Goût"
                             srcset="images/restaurants/stil-1280.jpg 1280w,
                                     images/restaurants/stil-720.jpg 720w,
                                     images/restaurants/stil-540.jpg 540w"
-                            sizes="100vm"/>
+                            sizes="100vw"/>
                             <p class="card__new"><strong>Nouveau</strong></p>
                         </div>
                         <div class="card__detail">
                             <h3 class="title__small">La note enchantée</h3>
                             <div class="icon__heart">
-                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart fa-xl"></i>
-                                <img class="icon__heart--lock icon__heart--homePosition" src="./images/icones/heart-solid-color-25px.png" alt="enregistrer dans les favoris"/>    
+                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart"></i>
+                                <i class="icon__heart--lock icon__heart--homePosition fa-solid fa-heart"></i>
                             </div>
                             <p>Charonne</p>
                         </div>
-                    </article>
-                </a>
-    
-                <a href="alafrancaise.html">
-                    <article class="card">
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="alafrancaise.html">
                         <div class="card__image--frame">
                             <img class="card__image--adapt" src="images/restaurants/toa-heftiba-1680.jpg"
                             alt="Restaurant La Palette du Goût"
                             srcset="images/restaurants/toa-heftiba-1280.jpg 1280w,
                                     images/restaurants/toa-heftiba-720.jpg 720w,
                                     images/restaurants/toa-heftiba-540.jpg 540w"
-                            sizes="100vm"/>
+                            sizes="100vw"/>
                         </div>
                         <div class="card__detail">
                             <h3 class="title__small">&#192; la française</h3>
                             <div class="icon__heart">
-                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart fa-xl"></i>
-                                <img class="icon__heart--lock icon__heart--homePosition" src="./images/icones/heart-solid-color-25px.png" alt="enregistrer dans les favoris"/>      
+                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart"></i>
+                                <i class="icon__heart--lock icon__heart--homePosition fa-solid fa-heart"></i>
                             </div>
                             <p>Cité Rouge</p>
                         </div>
-                    </article>
-                </a>
-    
-                <a href="ledelicedessens.html">
-                    <article class="card">
+                    </a>
+                </article>
+
+                <article class="card">
+                    <a href="ledelicedessens.html">
                         <div class="card__image--frame">
                             <img class="card__heart card__image--adapt" src="images/restaurants/louis-hansel-1680.jpg"
                             alt="Restaurant La Palette du Goût"
                             srcset="images/restaurants/louis-hansel-1280.jpg 1280w,
                                     images/restaurants/louis-hansel-720.jpg 720w,
                                     images/restaurants/louis-hansel-540.jpg 540w"
-                            sizes="100vm"/>                        
+                            sizes="100vw"/>                        
                         </div>
                         <div class="card__detail">
                             <h3 class="title__small">Le délice des sens</h3>
                             <div class="icon__heart">
-                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart fa-xl"></i>
-                                <img class="icon__heart--lock icon__heart--homePosition" src="./images/icones/heart-solid-color-25px.png" alt="enregistrer dans les favoris"/>  
+                                <i class="icon__heart--unlock icon__heart--homePosition fa-regular fa-heart"></i>
+                                <i class="icon__heart--lock icon__heart--homePosition fa-solid fa-heart"></i>
                             </div>
                             <p>Folie-Méricourt</p>
                         </div>
-                    </article>
-                </a>
-            </div>
-            
+                    </a>
+                </article>
+            </div>      
         </section>
     </main>
 
     <footer class="responsive--footer">
         <a href="index.html">
-            <h2 class="logoTitle logoTitle--footer">ohmyfood</h1>
+            <h2 class="logoTitle logoTitle--footer">ohmyfood</h2>
         </a>        
-        <ul class="footer__typo">
-            <a href="#">
-                <li class="flex">
+        <ul class="footer__typo responsive--footer">
+            <li class="flex">
+                <a href="#">
                     <i class="icon__footer fa-solid fa-utensils fa-sm"></i>
                     Proposer un restaurant
-                </li>
-            </a>
+                </a>
+            </li>
 
-            <a href="#">
-                <li class="flex">
+            <li class="flex">
+                <a href="#">
                     <i class="icon__footer fa-solid fa-handshake-angle fa-2xs"></i>
                     Devenir partenaire
-                </li>
-            </a>
+                </a>
+            </li>
 
-            <a href="#">
-                <li>
+            <li>
+                <a href="#">
                     Mentions légales
-                </li>
-            </a>
+                </a>
+            </li>
 
-            <a href="mailto:contact@ohmyfood.us">
-                <li>
+            <li>
+                <a href="mailto:contact@ohmyfood.us">
                    Contact
-                </li>
-            </a>
+                </a>
+            </li>
         </ul>
     </footer>
 </body>
-</htm
+</html>

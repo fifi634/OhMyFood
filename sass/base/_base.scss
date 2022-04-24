@@ -61,9 +61,10 @@ strong {
 }
 
 .responsive {
+    align-items: center;
+    flex-direction: column;
+
     @include tablet {
-        display: flex;
-        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }    
@@ -77,18 +78,13 @@ strong {
             margin-left: 20px;
         }
     }
-    &--column {
-        @include tablet {
-            flex-direction: column;
-        }
-    }
-    &--row {
+    &--rowDesktop {
         @include desktop {
             flex-direction:row;
         }
     }
     &--footer {
-        @include desktop {
+        @include tablet {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,11 +106,8 @@ strong {
         }
         @include mobile {
             display: flex;
-            align-items: center;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
     }
-
 }
