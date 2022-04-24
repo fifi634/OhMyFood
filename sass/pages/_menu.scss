@@ -1,0 +1,84 @@
+.backgroundMenu {
+    background-color: $color-background-section;
+}
+
+.menu {
+    position: relative;
+    top: -45px;
+    border-radius: 50px 50px 0 0;
+    z-index: 1;
+    background-color: $color-background-section;
+
+    &--margin {
+        padding: 30px 5%;
+    }
+    &__image--frame {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.logoTitle--menu {        //.logoTitle in _typography.scss for font-style
+    padding: 0;
+    width: 85%;
+    @include tablet {
+        margin: auto;
+    }
+}
+
+.menuLevel {
+    margin: 40px 0 5px 0;
+
+    &__underline{
+        width: 40px;
+        border-bottom: solid 3px $color-tertiary;
+        margin: 5px 0 0 0;
+    }
+}
+
+.meal {
+    padding: 10px 15px 0 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.ingredient {
+    position: relative;
+    line-height: 1.5em;
+    padding: 0 15px 10px 15px;
+    left: 0px;
+    max-width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.price {
+    position: absolute;
+    display: block;
+    background-color: $color-background-card;
+    right: 30px;
+    bottom: 10px;
+}
+
+.mealChecked {
+    display: none;
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: $color-tertiary;
+    width: 60px;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+}
+
+.positionMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

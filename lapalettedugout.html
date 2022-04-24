@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte !">
+    <title>Ohmyfood! &#192; la française</title>
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Fontawesome icon CDN -->
+    <script src="https://kit.fontawesome.com/aa01e1fd65.js" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Shrikhand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex">
+        <a href="index.html" class="toMenu"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+        <a href="index.html" class="header__logoPositionMenu">
+            <h1 class="logoTitle logoTitle--header">ohmyfood</h1>
+        </a>
+    </header>
+
+    <main class="backgroundMenu">
+        <div class="menu__image--frame">
+            <img class="card__image--adapt" src="images/restaurants/jay-wennington-1680.jpg"
+            alt="Restaurant La Palette du Goût"
+            srcset="images/restaurants/jay-wennington-1280.jpg 1280w,
+                    images/restaurants/jay-wennington-720.jpg 720w,
+                    images/restaurants/jay-wennington-540.jpg 540w"
+            sizes="100vw"/>
+        </div>
+
+        <section class="menu menu--margin">
+            <div class="flex">
+                <h2 class="logoTitle logoTitle--menu">La palette du goût</h2>
+                <a href="#" class="icon__heart icon__heart--menuPosition">
+                    <i class="icon__heart--unlock fa-regular fa-heart"></i>
+                    <i class="icon__heart--lock icon__heart--lockMenu fa-solid fa-heart"></i>
+                </a>
+            </div>
+
+            <form class="form" method="post" action="lapalettedugout.html" id="lapalettedugout">
+                <div class="responsive responsive--menu">
+                    <fieldset class="menuLevel">
+                        <legend>ENTR&#201;ES</legend>
+                        <div class="menuLevel__underline"></div>
+                        
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="escargot-palette" />
+                            <h4 class="title__small meal">Fricassée d'escargot</h4>   
+                            <p class="ingredient">Au piment d'Espelette </p>
+                            <p class="price translate">25€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="foisGras-palette" />
+                            <h4 class="title__small meal">Foie gras de canard mi-cuit</h4>
+                            <p class="ingredient">Et ses copeaux de truffe noire</p>
+                            <p class="price translate">35€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-xl"></i>
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="entrée" id="oeufPlat-palette" />
+                            <h4 class="title__small meal">Oeuf au plat</h4>
+                            <p class="ingredient">Assaisonné à la truffe sur lit de caviar</p>
+                            <p class="price translate">20€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+                    </fieldset>
+    
+                    <fieldset class="menuLevel">
+                        <legend>PLATS</legend>                    
+                        <div class="menuLevel__underline"></div>
+    
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="boeuf-palette" />
+                            <h4 class="title__small meal">Filet de boeuf aux herbes</h4>
+                            <p class="ingredient">Accompagné de sa ribambelle de légumes</p>
+                            <p class="price translate">40€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="parmentier-palette" />
+                            <h4 class="title__small meal">Parmentier de queue de boeuf</h4>
+                            <p class="ingredient">À la truffe noire sur sa purée de panais</p>
+                            <p class="price translate">35€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="plats" id="turbot-palette" />
+                            <h4 class="title__small meal">Filet de turbot</h4>
+                            <p class="ingredient">Aux agrumess</p>
+                            <p class="price translate">44€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                            </div>
+                        </article>
+                    </fieldset>
+    
+                    <fieldset class="menuLevel">
+                        <legend>DESSERTS</legend>
+                        <div class="menuLevel__underline"></div>
+    
+                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="parisBrest-palette" />
+                            <h4 class="title__small meal">Paris-Brest</h4>
+                            <p class="ingredient">Revisité</p>
+                            <p class="price translate">18€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="macaron-palette" />
+                            <h4 class="title__small meal">Macaron au chocolat d'exception </h4>
+                            <p class="ingredient">Et glace à la vanille de Madagascar</p>
+                            <p class="price translate">22€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                            </div>
+                        </article>
+    
+                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                            <input type="checkbox" name="desserts" id="mousseChocolat-palette" />
+                            <h4 class="title__small meal">Mousse au chocolat</h4>
+                            <p class="ingredient">Au piment d'Espelette et à la truffe noire</p>
+                            <p class="price translate">23€</p>
+                            <div class="mealChecked">
+                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                            </div>
+                        </article>
+                    </fieldset>  
+                </div>
+               
+                <input type="submit" class="flex button button__menu" value="Commander"/>
+            </form>
+        </section>
+    </main>
+
+    <footer class="responsive--footer">
+        <a href="index.html">
+            <h2 class="logoTitle logoTitle--footer">ohmyfood</h2>
+        </a>        
+        <ul class="footer__typo responsive--footer">
+            <li class="flex">
+                <a href="#">
+                    <i class="icon__footer fa-solid fa-utensils fa-sm"></i>
+                    Proposer un restaurant
+                </a>
+            </li>
+
+            <li class="flex">
+                <a href="#">
+                    <i class="icon__footer fa-solid fa-handshake-angle fa-2xs"></i>
+                    Devenir partenaire
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Mentions légales
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                   Contact
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

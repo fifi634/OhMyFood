@@ -1,0 +1,42 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+
+/* Reset CSS */
+@import "./Vendors/reset";
+
+/* Typography */
+@import "./base/typography";
+
+/* Base */
+@import "./base/base";
+
+/* Button */
+@import "./components/buttons";
+
+/* Card */
+@import "./components/cards";
+
+/* Icon */
+@import "./components/icons";
+
+/* Header */
+@import "./layout/header";
+
+/* Nav */
+@import "./layout/nav";
+
+/* Form */
+@import "./layout/forms";
+
+/* Footer */
+@import "./layout/footer";
+
+/* Loader */
+@import "./layout/loader";
+
+/* Home */
+@import "./pages/home.scss";
+
+/* Menu */
+@import "./pages/menu";

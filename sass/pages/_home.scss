@@ -1,0 +1,31 @@
+.location {
+    background-color: $color-background-section;
+}
+
+.description {
+    padding: 60px 5% 60px 5%;
+    text-align: center;
+    
+    &--titleMargin {
+        margin-bottom: 15px;
+    }
+    &--descriMargin {
+        margin-bottom: 40px;
+    }
+    &--typo {
+        color: #7b7b7b;
+    }
+}
+
+.section {
+    &--margin {
+        padding: 60px 5%;
+    }
+    &--background {
+        background-color: $color-background-section;
+    }
+}
+
+nav li {
+    width: 100%;
+}

@@ -1,0 +1,91 @@
+.card {
+    position: relative;
+    height: auto;
+    max-width: 570px;
+    border-radius: 20px;
+    background-color: $color-background-card;
+    margin: 20px 0 ;
+    box-shadow: 5px 5px 10px #e3e3e3;
+    flex: 1 1 auto;
+    @include desktop {
+        max-width: 440px;
+        margin: 20px;
+    }
+    @include miniMobile400 {
+        max-height: 200px;
+    }
+    &__image--frame {
+        height: 220px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+        @include miniMobile400 {
+            max-height: 100px;
+        }
+    }
+    &__image--adapt {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        @include miniMobile500 {
+            width: 150%;
+        }
+        @include miniMobile400 {
+            width: 200%;
+        }
+    }
+    &__detail {  
+        line-height: 25px;
+        padding: 15px 20px 15px 20px;
+    }
+    &__new {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        border: none;
+        padding: 8px 15px 8px 15px;
+        border-radius: 3px;
+        background-color: $color-tertiary;
+        color: darken($color: $color-tertiary, $amount: 40);
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.cardMenu {
+    overflow: hidden;
+    cursor: pointer;
+    flex-direction: column;
+    position: relative;
+    margin: 20px auto;
+    background-color: $color-background-card;
+    width: 450px;
+    @include miniMobile500 {
+        width: 100%;
+    }
+    @include miniMobile400 {
+        width: 90vw;
+    }
+    padding: 0;
+    &:hover {
+        color: inherit;
+        & .meal {
+            animation: MealSlip calc($time-appearance - .5s) forwards;
+        }
+        & .ingredient {
+            animation: IngredientSlip $time-appearance forwards;
+        }
+        .translate {
+            animation: TranslateX $time-appearance forwards;
+        }
+        .mealChecked {
+            display: block;
+            animation: Checked calc($time-appearance/2);
+        }
+    }
+}

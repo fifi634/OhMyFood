@@ -1,0 +1,68 @@
+body, .ingredient {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;  
+    font-weight: 300;
+    @include typo--color($color-background-body);
+    line-height: normal;
+}
+
+.logoTitle {
+    font-family: Shrikhand, cursive;
+    font-size: 26px;
+    @include typo--color($color-background-body);
+
+    &--footer {
+        @include typo--color($color-background-footer);
+        font-size: 22px;
+    }
+
+    &--menu {
+        font-size: 28px;
+    }
+}
+
+strong {
+    font-weight: 500;
+    @include typo--color($color-background-section);
+}
+
+.title {
+    &__general {
+        font-size: 24px;
+        font-weight: 600;
+        @include typo--color($color-background-section);
+    }
+    &__nav {
+        font-size: 14px;
+        font-weight: 500;
+        @include typo--color($color-background-section);
+    }
+    &__small {
+        font-weight: 600;
+        font-size: 18px;
+        @include typo--color($color-background-card);
+    }
+}
+
+.button {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-typo-button;
+}
+
+.puce {
+    color: $color-typo-button;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer__typo {
+    @include typo--color($color-background-footer);
+    font-weight: 500;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 16px;
+}
