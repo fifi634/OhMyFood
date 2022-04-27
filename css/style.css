@@ -24,7 +24,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes TranslateX {
+@keyframes TranslatePrice {
   0% {
     transform: translateX(0);
     animation-delay: 10ms;
@@ -70,8 +70,6 @@
 @keyframes loader {
   0% {
     opacity: 0;
-    transition: transform 0.3s;
-    color: transparent;
   }
   25% {
     transform: scaleX(0.4);
@@ -534,7 +532,7 @@ strong {
   animation: IngredientSlip 1s forwards;
 }
 .cardMenu:hover .translate {
-  animation: TranslateX 1s forwards;
+  animation: TranslatePrice 1s forwards;
 }
 .cardMenu:hover .mealChecked {
   display: block;
@@ -715,10 +713,6 @@ strong {
   .form__position__edit {
     margin: 0;
   }
-}
-
-label {
-  cursor: pointer;
 }
 
 /* Footer */

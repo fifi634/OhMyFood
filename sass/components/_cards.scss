@@ -65,13 +65,13 @@
     margin: 20px auto;
     background-color: $color-background-card;
     width: 450px;
+    padding: 0;
     @include miniMobile500 {
         width: 100%;
     }
     @include miniMobile400 {
         width: 90vw;
     }
-    padding: 0;
     &:hover {
         color: inherit;
         & .meal {
@@ -81,7 +81,7 @@
             animation: IngredientSlip $time-appearance forwards;
         }
         .translate {
-            animation: TranslateX $time-appearance forwards;
+            animation: TranslatePrice $time-appearance forwards;
         }
         .mealChecked {
             display: block;

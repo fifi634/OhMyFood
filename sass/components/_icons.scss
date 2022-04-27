@@ -6,7 +6,6 @@
         color: black;
         margin: 0 5px 0 -10px;
         text-align: center;
-
         @include miniMobile330 {
             text-align:left;
         }

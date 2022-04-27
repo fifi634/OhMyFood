@@ -10,12 +10,11 @@ body, .ingredient {
     font-family: Shrikhand, cursive;
     font-size: 26px;
     @include typo--color($color-background-body);
-
+    
     &--footer {
         @include typo--color($color-background-footer);
         font-size: 22px;
     }
-
     &--menu {
         font-size: 28px;
     }
