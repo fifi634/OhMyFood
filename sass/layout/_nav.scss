@@ -12,9 +12,6 @@
         @include tablet {
             width: 450px;
         }
-        &--active {
-            @include color--active;
-        }
         &--menu {
             position: relative;
             margin: 20px auto;
@@ -42,5 +39,19 @@
 .desktopNav {
     @include tablet {
         flex-direction: row;
+    }
+}
+
+ol .nav__button {
+    &:hover {
+        @include color--hover;
+        cursor: pointer;
+        
+        .nav__icon {
+            color: $color-primary;
+        }
+    }
+    & a:hover, .title__nav:hover {
+        color: inherit;
     }
 }

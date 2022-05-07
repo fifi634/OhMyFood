@@ -1,7 +1,4 @@
 .icon {
-    &--active {
-        color: $color-primary;
-    }
     &__location {
         color: black;
         margin: 0 5px 0 -10px;
@@ -60,7 +57,7 @@
             margin: 0px 10% 0 0 ;
         }
     }
-    &__mealChecked {            //info : this a subcategorie, .mealChecked is in _menu.scss
+    &__mealChecked {            //info : this is a subcategorie, .mealChecked is in _menu.scss
         position: relative;
         align-items: center;
         justify-content: center;
