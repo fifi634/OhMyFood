@@ -24,7 +24,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes TranslateX {
+@keyframes TranslatePrice {
   0% {
     transform: translateX(0);
     animation-delay: 10ms;
@@ -70,8 +70,6 @@
 @keyframes loader {
   0% {
     opacity: 0;
-    transition: transform 0.3s;
-    color: transparent;
   }
   25% {
     transform: scaleX(0.4);
@@ -389,7 +387,7 @@ strong {
     justify-content: space-around;
     gap: 0 60px;
   }
-  .responsive--menu fieldset {
+  .responsive--menu .responsive--menu section {
     margin-left: 30px;
   }
 }
@@ -534,7 +532,7 @@ strong {
   animation: IngredientSlip 1s forwards;
 }
 .cardMenu:hover .translate {
-  animation: TranslateX 1s forwards;
+  animation: TranslatePrice 1s forwards;
 }
 .cardMenu:hover .mealChecked {
   display: block;
@@ -542,9 +540,6 @@ strong {
 }
 
 /* Icon */
-.icon--active {
-  color: #9356DC;
-}
 .icon__location {
   color: black;
   margin: 0 5px 0 -10px;
@@ -656,9 +651,6 @@ strong {
     width: 450px;
   }
 }
-.nav__button--active {
-  background-color: rgba(215, 192, 242, 0.3);
-}
 .nav__button--menu {
   position: relative;
   margin: 20px auto;
@@ -685,6 +677,17 @@ strong {
   .desktopNav {
     flex-direction: row;
   }
+}
+
+ol .nav__button:hover {
+  background-color: rgba(215, 192, 242, 0.3);
+  cursor: pointer;
+}
+ol .nav__button:hover .nav__icon {
+  color: #9356DC;
+}
+ol .nav__button a:hover, ol .nav__button .title__nav:hover {
+  color: inherit;
 }
 
 /* Form */
@@ -715,10 +718,6 @@ strong {
   .form__position__edit {
     margin: 0;
   }
-}
-
-label {
-  cursor: pointer;
 }
 
 /* Footer */

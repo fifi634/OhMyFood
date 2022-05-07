@@ -12,7 +12,7 @@
     <!-- Fontawesome icon CDN -->
     <script src="https://kit.fontawesome.com/aa01e1fd65.js" crossorigin="anonymous"></script>
     <!-- CSS files -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prefixed/style.css">
     <!-- Font Shrikhand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,126 +50,113 @@
                 </a>
             </div>
 
-            <form class="form" method="post" action="lanoteenchentee.html" id="lanoteenchentee">
-                <div class="responsive responsive--menu">
-                    <fieldset class="menuLevel">
-                        <legend>ENTR&#201;ES</legend>
-                        <div class="menuLevel__underline"></div>
-                        
-                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="entrée" id="raviole-note" />
-                            <h4 class="title__small meal">Ravioles de foie gras</h4>   
-                            <p class="ingredient">Accompagnés de leur crème à la truffe</p>
-                            <p class="price translate">25€</p>
-                            <div class="mealChecked">                            
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="entrée" id="caviar-note" />
-                            <h4 class="title__small meal">Caviar osciètre</h4>   
-                            <p class="ingredient">Sur blini à la farine de blé noir</p>
-                            <p class="price translate">35€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-xl"></i>
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="entrée" id="homard-note" />
-                            <h4 class="title__small meal">Homard et espuma de potiron</h4>   
-                            <p class="ingredient">Mariné aux zestes d'orange</p>
-                            <p class="price translate">20€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </article>
+            <div class="responsive responsive--menu">
+                <section class="menuLevel">
+                    <h3>ENTR&#201;ES</h3>
+                    <div class="menuLevel__underline"></div>
+                    
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Ravioles de foie gras</h4>   
+                        <p class="ingredient">Accompagnés de leur crème à la truffe</p>
+                        <p class="price translate">25€</p>
+                        <div class="mealChecked">                            
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
 
-                        <article class="flex appearance appearance--delay3 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="entrée" id="foisGras-note" />
-                            <h4 class="title__small meal">Foie gras de canard cuit entier</h4>   
-                            <p class="ingredient">Confiture de figue et pain toasté</p>
-                            <p class="price translate">35€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </article>
-                    </fieldset>
-    
-                    <fieldset class="menuLevel">
-                        <legend>PLATS</legend>                    
-                        <div class="menuLevel__underline"></div>
-    
-                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="plats" id="coquilles-note" />
-                            <h4 class="title__small meal">Noix de coquilles Saint-Jacques</h4>   
-                            <p class="ingredient">Sur lit de purée de céleri-rave</p>
-                            <p class="price translate">40€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="plats" id="langoustine-note" />
-                            <h4 class="title__small meal">Langoustine poêlée</h4>   
-                            <p class="ingredient">Purée de patate douce</p>
-                            <p class="price translate">35€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="plats" id="boeuf-note" />
-                            <h4 class="title__small meal">Mijoté de queue de boeuf </h4>   
-                            <p class="ingredient">Et riz sauvage aux zestes de citron</p>
-                            <p class="price translate">44€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-                    </fieldset>
-    
-                    <fieldset class="menuLevel">
-                        <legend>DESSERTS</legend>
-                        <div class="menuLevel__underline"></div>
-    
-                        <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="desserts" id="macaron-note" />
-                            <h4 class="title__small meal">Macaron noisette et chocolat</h4>   
-                            <p class="ingredient">Glace au caramel brun et sel de Guérande</p>
-                            <p class="price translate">18€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="desserts" id="baba-note" />
-                            <h4 class="title__small meal">Baba au rhum revisité</h4>   
-                            <p class="ingredient">Avec son coulis de citron</p>
-                            <p class="price translate">22€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-    
-                        <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
-                            <input type="checkbox" name="desserts" id="tarte-note" />
-                            <h4 class="title__small meal">Tarte au citron meringuée </h4>   
-                            <p class="ingredient">Déstructuréee</p>
-                            <p class="price translate">23€</p>
-                            <div class="mealChecked">
-                                <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
-                            </div>
-                        </article>
-                    </fieldset>  
-                </div>
-               
-                <input type="submit" class="flex button button__menu" value="Commander"/>
-            </form>   
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Caviar osciètre</h4>   
+                        <p class="ingredient">Sur blini à la farine de blé noir</p>
+                        <p class="price translate">35€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Homard et espuma de potiron</h4>   
+                        <p class="ingredient">Mariné aux zestes d'orange</p>
+                        <p class="price translate">20€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay3 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Foie gras de canard cuit entier</h4>   
+                        <p class="ingredient">Confiture de figue et pain toasté</p>
+                        <p class="price translate">35€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="menuLevel">
+                    <h3>PLATS</h3>                    
+                    <div class="menuLevel__underline"></div>
+
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Noix de coquilles Saint-Jacques</h4>   
+                        <p class="ingredient">Sur lit de purée de céleri-rave</p>
+                        <p class="price translate">40€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Langoustine poêlée</h4>   
+                        <p class="ingredient">Purée de patate douce</p>
+                        <p class="price translate">35€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Mijoté de queue de boeuf </h4>   
+                        <p class="ingredient">Et riz sauvage aux zestes de citron</p>
+                        <p class="price translate">44€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
+                </section>
+
+                <section class="menuLevel">
+                    <h3>DESSERTS</h3>
+                    <div class="menuLevel__underline"></div>
+
+                    <article class="flex appearance appearance--delay0 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Macaron noisette et chocolat</h4>   
+                        <p class="ingredient">Glace au caramel brun et sel de Guérande</p>
+                        <p class="price translate">18€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay1 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Baba au rhum revisité</h4>   
+                        <p class="ingredient">Avec son coulis de citron</p>
+                        <p class="price translate">22€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
+
+                    <article class="flex appearance appearance--delay2 cardMenu nav__button nav__button--menu">
+                        <h4 class="title__small meal">Tarte au citron meringuée </h4>   
+                        <p class="ingredient">Déstructuréee</p>
+                        <p class="price translate">23€</p>
+                        <div class="mealChecked">
+                            <i class="flex icon__mealChecked fa-solid fa-circle-check fa-lg"></i>  
+                        </div>
+                    </article>
+                </section>  
+            </div>             
+            <button class="flex button button__menu">Commander</button>
         </section>
     </main>
 
@@ -199,8 +186,8 @@
             </li>
 
             <li>
-                <a href="#">
-                   Contact
+                <a href="mailto:contact@ohmyfood.us">
+                    Contact
                 </a>
             </li>
         </ul>

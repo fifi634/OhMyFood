@@ -47,12 +47,10 @@ a:hover {
 strong {
     color: inherit;
     font-weight: inherit;
-    
 }
 
 .appearance {
     opacity: 0;
-
     @for $i from 0 through 9 {
         &--delay#{$i} {
             animation: Appearance $time-appearance calc(200ms * $i) forwards;
@@ -63,7 +61,6 @@ strong {
 .responsive {
     align-items: center;
     flex-direction: column;
-
     @include tablet {
         display: flex;
         justify-content: center;
@@ -98,7 +95,8 @@ strong {
         @include desktop {
             justify-content: space-around;
             gap: 0 60px;
-            fieldset {
+            
+            .responsive--menu section {
                 margin-left: 30px;
             }
         }

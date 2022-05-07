@@ -11,7 +11,7 @@
     <!-- Fontawesome icon CDN -->
     <script src="https://kit.fontawesome.com/aa01e1fd65.js" crossorigin="anonymous"></script>
     <!-- CSS files -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prefixed/style.css">
     <!-- Font Shrikhand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,21 +32,18 @@
     </header>
 
     <main>
-        <div class="location">
-            <form class="form form__position" method="post" action="#">
-                <div class="form__position__edit">
-                    <i class="icon__location icon__location--center fa-solid fa-location-dot"></i>
-                    <input type="search" value="Paris, Belleville" placeholder="entrer votre ville"/>
-                </div>
+        <form class="location form form__position" method="post" action="#">
+            <div class="form__position__edit">
+                <i class="icon__location icon__location--center fa-solid fa-location-dot"></i>
+                <input type="search" value="Paris, Belleville" placeholder="entrer votre ville"/>
+            </div>
 
-                <article class="description">
-                    <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h2>
-                    <p class="description--descriMargin description--typo">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <input type="submit" class="button" value="Explorer nos restaurants">
-                </article>
-            </form>
-        </div>
-
+            <article class="description">
+                <h2 class="title__general description--titleMargin">Réservez le menu qui vous convient</h2>
+                <p class="description--descriMargin description--typo">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <input type="submit" class="button" value="Explorer nos restaurants">
+            </article>
+        </form>
         
         <nav class="flex nav section--margin responsive--title">
             <h2 class="title__general">Fonctionnement</h2>
@@ -71,7 +68,7 @@
                 <li class="flex nav__button nav__button--active">
                     <a href="#" class="flex">
                         <div class="flex puce">3</div>
-                        <i class="nav__icon icon--active fa-solid fa-store"></i>
+                        <i class="nav__icon fa-solid fa-store"></i>
                         <h3 class="title__nav">Dégustez au restaurant</h3>
                     </a>
                 </li>
