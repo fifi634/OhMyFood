@@ -95,7 +95,8 @@ strong {
         @include desktop {
             justify-content: space-around;
             gap: 0 60px;
-            fieldset {
+            
+            .responsive--menu section {
                 margin-left: 30px;
             }
         }
